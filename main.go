@@ -41,8 +41,14 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "homepage.html", nil)
 	})
-	r.GET("/test", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "yihong0618.html", nil)
+	r.GET("/:username", func(c *gin.Context) {
+		NameList := makeUserNameList()
+		name := c.Param("username")
+		if ContainsInArray(name, NameList) {
+			c.HTML(http.StatusOK, name+".html", nil)
+		} else {
+			c.HTML(http.StatusOK, "homepage.html", nil)
+		}
 	})
 	r.POST("/generate", func(c *gin.Context) {
 		needRefresh := false
