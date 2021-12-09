@@ -37,7 +37,6 @@ func ContainsInArray(a string, list []string) bool {
 
 func main() {
 	r := gin.Default()
-	userNameList := makeUserNameList()
 	r.LoadHTMLGlob("templates/*.html")
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "homepage.html", nil)
@@ -46,8 +45,16 @@ func main() {
 		c.HTML(http.StatusOK, "yihong0618.html", nil)
 	})
 	r.POST("/generate", func(c *gin.Context) {
+		needRefresh := false
 		userName, _ := c.GetPostForm("r")
-		if ContainsInArray(userName, userNameList) {
+		l := strings.Split(userName, "--")
+		if len(l) > 1 && l[1] == "refresh" {
+			needRefresh = true
+		}
+		userName = l[0]
+		// TODO refactor
+		userNameList := makeUserNameList()
+		if ContainsInArray(userName, userNameList) && !needRefresh {
 			c.HTML(http.StatusOK, userName+".html", nil)
 		} else {
 			github.GenerateNewFile(userName)
@@ -56,5 +63,5 @@ func main() {
 			c.HTML(http.StatusOK, userName+".html", nil)
 		}
 	})
-	r.Run()
+	r.Run(":4000")
 }
