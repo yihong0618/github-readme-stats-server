@@ -47,10 +47,7 @@ func main() {
 		if ContainsInArray(name, NameList) {
 			c.HTML(http.StatusOK, name+".html", nil)
 		} else {
-			github.GenerateNewFile(name)
-			// warit for a while to make sure the file is generated
-			time.Sleep(time.Second * 1)
-			c.HTML(http.StatusOK, name+".html", nil)
+            c.HTML(http.StatusOK, "homepage.html", nil)
 		}
 	})
 	r.POST("/generate", func(c *gin.Context) {
