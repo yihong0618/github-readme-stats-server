@@ -85,7 +85,7 @@ func fetchAllCreatedRepos(username string, client *github.Client) []*github.Repo
 	for {
 		repos, resp, err := client.Repositories.List(context.Background(), username, opt)
 		if err != nil {
-			fmt.Println(username, "Something wrong to get repos")
+			fmt.Println(username, "Something wrong to get repos", err)
 			continue
 		}
 		allRepos = append(allRepos, repos...)
@@ -191,7 +191,7 @@ func fetchRecentStared(username string, client *github.Client) []*github.Starred
 	var allStared []*github.StarredRepository
 	repos, _, err := client.Activity.ListStarred(context.Background(), username, opt)
 	if err != nil {
-		fmt.Println("Something wrong to get stared")
+		fmt.Println("Something wrong to get stared", err)
 	}
 	allStared = append(allStared, repos...)
 	return allStared
