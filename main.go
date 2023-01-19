@@ -37,11 +37,11 @@ func ContainsInArray(a string, list []string) bool {
 
 func main() {
 	r := gin.Default()
-	r.LoadHTMLGlob("templates/*.html")
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "homepage.html", nil)
 	})
 	r.GET("/:username", func(c *gin.Context) {
+		r.LoadHTMLGlob("templates/*.html")
 		NameList := makeUserNameList()
 		name := c.Param("username")
 		if ContainsInArray(name, NameList) {
