@@ -15,6 +15,7 @@ import (
 	"github.com/google/go-github/v41/github"
 	"github.com/olekukonko/tablewriter"
 	"github.com/shurcooL/github_flavored_markdown"
+	"golang.org/x/oauth2"
 )
 
 var (
@@ -49,6 +50,7 @@ type myPrInfo struct {
 	repoURL    string
 	fisrstDate string
 	lasteDate  string
+	language   string
 	prCount    int
 }
 
@@ -72,9 +74,9 @@ type myStaredInfo struct {
 	myRepoInfo
 }
 
-func getRepoName(RepositoryURL string) string {
+func getRepoNameAndOwner(RepositoryURL string) (string, string) {
 	q := strings.Split(RepositoryURL, "/")
-	return q[len(q)-1]
+	return q[len(q)-1], q[len(q)-2]
 }
 
 func fetchAllCreatedRepos(username string, client *github.Client) []*github.Repository {
@@ -104,16 +106,16 @@ func makeCreatedRepos(repos []*github.Repository) ([]myRepoInfo, int) {
 		if !*repo.Fork {
 			create := (*repo.CreatedAt).String()[:10]
 			update := (*repo.UpdatedAt).String()[:10]
-			lauguage := "md"
+			language := "md"
 			if repo.Language != nil {
-				lauguage = *repo.Language
+				language = *repo.Language
 			}
 			myRepos = append(myRepos, myRepoInfo{
 				star:     *repo.StargazersCount,
 				name:     *repo.Name,
 				create:   create,
 				update:   update,
-				lauguage: lauguage,
+				lauguage: language,
 				HTMLURL:  *repo.HTMLURL,
 			})
 			totalCount = totalCount + *repo.StargazersCount
@@ -146,20 +148,31 @@ func fetchAllPrIssues(username string, client *github.Client) []*github.Issue {
 	return allIssues
 }
 
-func makePrRepos(issues []*github.Issue) ([]myPrInfo, int) {
+func makePrRepos(issues []*github.Issue, client *github.Client) ([]myPrInfo, int) {
 	totalPrCount := 0
 	prMap := make(map[string]map[string]interface{})
 	for _, issue := range issues {
 		if *issue.AuthorAssociation == "OWNER" {
 			continue
 		}
-		repoName := getRepoName(*issue.RepositoryURL)
+		repoName, owner := getRepoNameAndOwner(*issue.RepositoryURL)
+
 		if len(prMap[repoName]) == 0 {
 			prMap[repoName] = make(map[string]interface{})
 			prMap[repoName]["prCount"] = 1
 			prMap[repoName]["fisrstDate"] = (*issue.CreatedAt).String()[:10]
 			prMap[repoName]["lasteDate"] = (*issue.CreatedAt).String()[:10]
 			prMap[repoName]["repoURL"] = *issue.RepositoryURL
+			repo, _, err := client.Repositories.Get(context.Background(), owner, repoName)
+			if err != nil {
+				fmt.Println(repoName, "Something wrong to get repo language", err)
+				continue
+			}
+			language := "md"
+			if repo.Language != nil {
+				language = *repo.Language
+			}
+			prMap[repoName]["language"] = language
 		} else {
 			prMap[repoName]["prCount"] = prMap[repoName]["prCount"].(int) + 1
 			if prMap[repoName]["fisrstDate"].(string) > (*issue.CreatedAt).String()[:10] {
@@ -178,6 +191,7 @@ func makePrRepos(issues []*github.Issue) ([]myPrInfo, int) {
 			repoURL:    v["repoURL"].(string),
 			fisrstDate: v["fisrstDate"].(string),
 			lasteDate:  v["lasteDate"].(string),
+			language:   v["language"].(string),
 			prCount:    v["prCount"].(int),
 		})
 	}
@@ -253,11 +267,11 @@ func makeCreatedString(repos []myRepoInfo, userName string, total int) string {
 func makeContributedString(myPRs []myPrInfo, userName string, total int) string {
 	prsData := [][]string{}
 	for i, pr := range myPRs {
-		prsData = append(prsData, []string{strconv.Itoa(i + 1), pr.mdName(), pr.fisrstDate, pr.lasteDate, fmt.Sprintf("[%d](%s)", pr.prCount, getAllPrLinks(pr, userName))})
+		prsData = append(prsData, []string{strconv.Itoa(i + 1), pr.mdName(), pr.fisrstDate, pr.lasteDate, pr.language, fmt.Sprintf("[%d](%s)", pr.prCount, getAllPrLinks(pr, userName))})
 	}
-	prsData = append(prsData, []string{"sum", "", "", "", strconv.Itoa(total)})
+	prsData = append(prsData, []string{"sum", "", "", "", "", strconv.Itoa(total)})
 	myContributedTitle := fmt.Sprintf("## The repos %s contributed to\n", userName)
-	myPrString := makeMdTable(prsData, []string{"ID", "Repo", "firstDate", "lasteDate", "prCount"})
+	myPrString := makeMdTable(prsData, []string{"ID", "Repo", "firstDate", "lasteDate", "Language", "prCount"})
 	return myContributedTitle + myPrString + "\n"
 }
 
@@ -278,6 +292,12 @@ func makeStaredString(myStars []myStaredInfo, starNumber int, userName string) s
 
 func GenerateNewFile(UserName string) {
 	client := github.NewClient(nil)
+	if tok := os.Getenv("GITHUB_TOKEN"); tok != "" {
+		ts := oauth2.StaticTokenSource(&oauth2.Token{AccessToken: tok})
+		ctx := context.Background()
+		tc := oauth2.NewClient(ctx, ts)
+		client = github.NewClient(tc)
+	}
 	repos := fetchAllCreatedRepos(UserName, client)
 	myRepos, totalCount := makeCreatedRepos(repos)
 	// change sort logic here
@@ -286,7 +306,7 @@ func GenerateNewFile(UserName string) {
 	})
 
 	issues := fetchAllPrIssues(UserName, client)
-	myPRs, totalPrCount := makePrRepos(issues)
+	myPRs, totalPrCount := makePrRepos(issues, client)
 	// change sort logic here
 	sort.Slice(myPRs[:], func(i, j int) bool {
 		return myPRs[j].prCount < myPRs[i].prCount
@@ -310,6 +330,7 @@ func GenerateNewFile(UserName string) {
 		fmt.Println("")
 	}
 	result := github_flavored_markdown.Markdown([]byte(newContentString))
+	UserName = strings.ToLower(UserName)
 	outputFile, _ := os.Create("templates/" + UserName + ".html")
 	err = tmpl.Execute(outputFile, contextHTML{Title: UserName, Body: string(result)})
 	if err != nil {

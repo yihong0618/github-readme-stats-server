@@ -45,10 +45,10 @@ func main() {
 		r.LoadHTMLGlob("templates/*.html")
 		NameList := makeUserNameList()
 		name := c.Param("username")
-		if ContainsInArray(name, NameList) {
+		if ContainsInArray(strings.ToLower(name), NameList) {
 			c.HTML(http.StatusOK, name+".html", nil)
 		} else {
-            c.HTML(http.StatusOK, "homepage.html", nil)
+			c.HTML(http.StatusOK, "homepage.html", nil)
 		}
 	})
 	r.POST("/generate", func(c *gin.Context) {
@@ -59,14 +59,17 @@ func main() {
 			needRefresh = true
 		}
 		userName = l[0]
+		userName = strings.TrimSpace(userName)
 		// TODO refactor
 		userNameList := makeUserNameList()
 		if ContainsInArray(userName, userNameList) && !needRefresh {
+			userName = strings.ToLower(userName)
 			c.HTML(http.StatusOK, userName+".html", nil)
 		} else {
 			github.GenerateNewFile(userName)
 			// warit for a while to make sure the file is generated
-			time.Sleep(time.Second * 1)
+			time.Sleep(time.Second * 2)
+			userName = strings.ToLower(userName)
 			c.HTML(http.StatusOK, userName+".html", nil)
 		}
 	})

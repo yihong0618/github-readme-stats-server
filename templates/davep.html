@@ -1,0 +1,2139 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>davep</title>
+    <style>
+      body {
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+.main-link {
+  text-decoration: none;
+  color: inherit;
+}
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.markdown-body a {
+  background-color: transparent;
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+.markdown-body * {
+  box-sizing: border-box;
+}
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h1 {
+  font-size: 30px;
+}
+.markdown-body h2 {
+  font-size: 21px;
+}
+.markdown-body blockquote {
+  margin: 0;
+}
+.markdown-body dd {
+  margin-left: 0;
+}
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h5 {
+  font-size: 1em;
+}
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-body li>p {
+  margin-top: 16px;
+}
+.markdown-body dl {
+  padding: 0;
+}
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+.markdown-body table th {
+  font-weight: bold;
+}
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.markdown-body pre {
+  word-wrap: normal;
+}
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+}
+    </style>
+  </head>
+<body>
+	<div class="container p-4">
+	<main>
+	<div class="heading text-center">
+		<h1 class="display-1">
+		<a
+			href="https://github.com/yihong0618/github-readme-stats-server"
+			class="main-link"
+			>GitHub README Stats</a
+		>
+		</h1>
+		<p class="lead">Generate GitHub User README Profile</p>
+	</div>
+	<hr />
+	<form action="/generate" method="post">
+		<div class="input-group mb-4">
+		<input
+			class="form-control form-control-lg"
+			type="text"
+			placeholder="GitHub username"
+			aria-label="Input GitHub username"
+			name="r"
+			id="r"
+		/>
+		<button class="btn btn-primary">GO!</button>
+		</div>
+	</form>
+	</div>
+	</main>
+  <div class="tips">
+    <h4>Tips</h4>
+    <ul>
+      <li>
+        Add query string <code>--refresh</code> to clear the caches
+      </li>
+    </ul>
+  </div>
+  </main>
+  <footer>
+  <h4>Credits</h4>
+  <ul>
+    <li>
+      <a href="https://github.com/frostming">frostming</a>'s
+      <a href="https://github.com/frostming/tokei-pie-cooker">tokei-pie-cooker</a> project
+    </li>
+  </ul>
+  </footer>
+	</div>
+  <article class="markdown-body">
+    <h2><a name="the-repos-davep-created" class="anchor" href="#the-repos-davep-created" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>The repos davep created</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>START</th>
+<th>UPDATE</th>
+<th>LAUGUAGE</th>
+<th>STARS</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/davep/cheat-sh.el" rel="nofollow">cheat-sh.el</a></td>
+<td>2017-06-02</td>
+<td>2023-01-07</td>
+<td>Emacs Lisp</td>
+<td>53</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/davep/pinboard.el" rel="nofollow">pinboard.el</a></td>
+<td>2019-05-18</td>
+<td>2023-01-08</td>
+<td>Emacs Lisp</td>
+<td>35</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/davep/textual-astview" rel="nofollow">textual-astview</a></td>
+<td>2022-12-19</td>
+<td>2023-01-04</td>
+<td>Python</td>
+<td>35</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/davep/boxquote.el" rel="nofollow">boxquote.el</a></td>
+<td>2008-10-11</td>
+<td>2022-12-15</td>
+<td>Emacs Lisp</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/davep/thinks.el" rel="nofollow">thinks.el</a></td>
+<td>2008-10-11</td>
+<td>2022-07-05</td>
+<td>Emacs Lisp</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/davep/.emacs.d" rel="nofollow">.emacs.d</a></td>
+<td>2016-05-13</td>
+<td>2023-01-19</td>
+<td>Emacs Lisp</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/davep/dad-joke.el" rel="nofollow">dad-joke.el</a></td>
+<td>2017-06-20</td>
+<td>2022-01-08</td>
+<td>Emacs Lisp</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/davep/trMandelbrot" rel="nofollow">trMandelbrot</a></td>
+<td>2022-10-30</td>
+<td>2022-11-13</td>
+<td>Python</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/davep/uptimes.el" rel="nofollow">uptimes.el</a></td>
+<td>2008-10-09</td>
+<td>2022-11-16</td>
+<td>Emacs Lisp</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/davep/rate-sx.el" rel="nofollow">rate-sx.el</a></td>
+<td>2017-12-06</td>
+<td>2022-09-10</td>
+<td>Emacs Lisp</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/davep/unbored" rel="nofollow">unbored</a></td>
+<td>2022-11-22</td>
+<td>2022-12-17</td>
+<td>Python</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/davep/eg" rel="nofollow">eg</a></td>
+<td>2015-12-04</td>
+<td>2021-07-03</td>
+<td>C</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/davep/oidia" rel="nofollow">oidia</a></td>
+<td>2022-12-04</td>
+<td>2023-01-04</td>
+<td>Python</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/davep/dnote.el" rel="nofollow">dnote.el</a></td>
+<td>2020-01-08</td>
+<td>2021-11-22</td>
+<td>Emacs Lisp</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/davep/commoji.el" rel="nofollow">commoji.el</a></td>
+<td>2018-04-20</td>
+<td>2021-11-23</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://github.com/davep/obfusurl.el" rel="nofollow">obfusurl.el</a></td>
+<td>2016-05-23</td>
+<td>2021-05-09</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://github.com/davep/goto-line-faster.el" rel="nofollow">goto-line-faster.el</a></td>
+<td>2020-08-24</td>
+<td>2021-11-22</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://github.com/davep/org-davep-dict" rel="nofollow">org-davep-dict</a></td>
+<td>2012-03-19</td>
+<td>2020-07-22</td>
+<td>Common Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://github.com/davep/festival.el" rel="nofollow">festival.el</a></td>
+<td>2016-05-23</td>
+<td>2022-11-24</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://github.com/davep/numbers.el" rel="nofollow">numbers.el</a></td>
+<td>2017-07-06</td>
+<td>2021-11-04</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://github.com/davep/rbartman" rel="nofollow">rbartman</a></td>
+<td>2008-10-09</td>
+<td>2021-07-15</td>
+<td>C#</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://github.com/davep/delpa" rel="nofollow">delpa</a></td>
+<td>2017-03-30</td>
+<td>2022-06-22</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://github.com/davep/git2gantt" rel="nofollow">git2gantt</a></td>
+<td>2019-02-08</td>
+<td>2021-09-29</td>
+<td>Python</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://github.com/davep/services.el" rel="nofollow">services.el</a></td>
+<td>2016-05-23</td>
+<td>2019-02-28</td>
+<td>Emacs Lisp</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://github.com/davep/binclock.el" rel="nofollow">binclock.el</a></td>
+<td>2016-05-23</td>
+<td>2018-07-08</td>
+<td>Emacs Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://github.com/davep/textual-qrcode" rel="nofollow">textual-qrcode</a></td>
+<td>2022-11-28</td>
+<td>2022-12-15</td>
+<td>Python</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://github.com/davep/fish" rel="nofollow">fish</a></td>
+<td>2019-05-06</td>
+<td>2022-11-08</td>
+<td>Shell</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://github.com/davep/avmmf.el" rel="nofollow">avmmf.el</a></td>
+<td>2008-10-09</td>
+<td>2019-08-13</td>
+<td>Emacs Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://github.com/davep/selection" rel="nofollow">selection</a></td>
+<td>2008-10-13</td>
+<td>2019-08-13</td>
+<td>md</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://github.com/davep/nuke-buffers.el" rel="nofollow">nuke-buffers.el</a></td>
+<td>2017-04-21</td>
+<td>2019-12-18</td>
+<td>Emacs Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://github.com/davep/rollavg" rel="nofollow">rollavg</a></td>
+<td>2008-10-09</td>
+<td>2019-08-13</td>
+<td>md</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://github.com/davep/getrbart" rel="nofollow">getrbart</a></td>
+<td>2008-10-09</td>
+<td>2019-08-13</td>
+<td>md</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://github.com/davep/parenface.el" rel="nofollow">parenface.el</a></td>
+<td>2016-05-23</td>
+<td>2022-08-21</td>
+<td>Emacs Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://github.com/davep/davep.github.com" rel="nofollow">davep.github.com</a></td>
+<td>2012-03-06</td>
+<td>2023-01-07</td>
+<td>SCSS</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://github.com/davep/mandeldraw" rel="nofollow">mandeldraw</a></td>
+<td>2008-10-09</td>
+<td>2019-08-13</td>
+<td>md</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://github.com/davep/gridinfo" rel="nofollow">gridinfo</a></td>
+<td>2022-11-08</td>
+<td>2022-12-10</td>
+<td>Python</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://github.com/davep/2bit.el" rel="nofollow">2bit.el</a></td>
+<td>2020-08-29</td>
+<td>2021-11-22</td>
+<td>Emacs Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://github.com/davep/weg" rel="nofollow">weg</a></td>
+<td>2008-10-09</td>
+<td>2019-08-13</td>
+<td>Pascal</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://github.com/davep/org-davep-dictrepl" rel="nofollow">org-davep-dictrepl</a></td>
+<td>2012-03-19</td>
+<td>2019-08-02</td>
+<td>Common Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://github.com/davep/protocols.el" rel="nofollow">protocols.el</a></td>
+<td>2016-05-23</td>
+<td>2019-06-04</td>
+<td>Emacs Lisp</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>41</td>
+<td><a href="https://github.com/davep/pispy" rel="nofollow">pispy</a></td>
+<td>2022-11-29</td>
+<td>2022-12-04</td>
+<td>Python</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>42</td>
+<td><a href="https://github.com/davep/packman" rel="nofollow">packman</a></td>
+<td>2008-10-16</td>
+<td>2019-08-13</td>
+<td>Ruby</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>43</td>
+<td><a href="https://github.com/davep/dict.rb" rel="nofollow">dict.rb</a></td>
+<td>2008-10-09</td>
+<td>2019-08-13</td>
+<td>md</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>44</td>
+<td><a href="https://github.com/davep/5x5-Palm" rel="nofollow">5x5-Palm</a></td>
+<td>2017-03-21</td>
+<td>2020-03-05</td>
+<td>C</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>45</td>
+<td><a href="https://github.com/davep/e" rel="nofollow">e</a></td>
+<td>2019-11-26</td>
+<td>2020-01-14</td>
+<td>Shell</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>46</td>
+<td><a href="https://github.com/davep/slstats.el" rel="nofollow">slstats.el</a></td>
+<td>2017-05-16</td>
+<td>2021-05-14</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td><a href="https://github.com/davep/org-davep-nntp" rel="nofollow">org-davep-nntp</a></td>
+<td>2019-03-23</td>
+<td>2020-03-28</td>
+<td>Common Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td><a href="https://github.com/davep/quiz.el" rel="nofollow">quiz.el</a></td>
+<td>2017-08-10</td>
+<td>2022-05-15</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>49</td>
+<td><a href="https://github.com/davep/realpath" rel="nofollow">realpath</a></td>
+<td>2017-02-21</td>
+<td>2021-08-12</td>
+<td>C</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td><a href="https://github.com/davep/expando.el" rel="nofollow">expando.el</a></td>
+<td>2017-05-14</td>
+<td>2022-12-02</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>51</td>
+<td><a href="https://github.com/davep/jsNG" rel="nofollow">jsNG</a></td>
+<td>2017-02-16</td>
+<td>2020-08-14</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://github.com/davep/sawfish.el" rel="nofollow">sawfish.el</a></td>
+<td>2017-03-31</td>
+<td>2020-03-28</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>53</td>
+<td><a href="https://github.com/davep/Chrome-5x5" rel="nofollow">Chrome-5x5</a></td>
+<td>2011-07-15</td>
+<td>2013-12-19</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>54</td>
+<td><a href="https://github.com/davep/textual-keys" rel="nofollow">textual-keys</a></td>
+<td>2022-12-02</td>
+<td>2022-12-19</td>
+<td>Python</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>55</td>
+<td><a href="https://github.com/davep/BahaiCalendar.pas" rel="nofollow">BahaiCalendar.pas</a></td>
+<td>2019-03-10</td>
+<td>2020-03-05</td>
+<td>Pascal</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>56</td>
+<td><a href="https://github.com/davep/fivepyfive" rel="nofollow">fivepyfive</a></td>
+<td>2022-10-11</td>
+<td>2022-12-23</td>
+<td>Python</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>57</td>
+<td><a href="https://github.com/davep/flounder_score" rel="nofollow">flounder_score</a></td>
+<td>2019-12-17</td>
+<td>2021-10-29</td>
+<td>Python</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>58</td>
+<td><a href="https://github.com/davep/ng2html" rel="nofollow">ng2html</a></td>
+<td>2017-02-28</td>
+<td>2020-07-27</td>
+<td>C</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>59</td>
+<td><a href="https://github.com/davep/qrencode.el" rel="nofollow">qrencode.el</a></td>
+<td>2017-06-07</td>
+<td>2020-10-10</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>60</td>
+<td><a href="https://github.com/davep/mkdocstrings-issue" rel="nofollow">mkdocstrings-issue</a></td>
+<td>2023-01-16</td>
+<td>2023-01-16</td>
+<td>Python</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>61</td>
+<td><a href="https://github.com/davep/5x5.xml" rel="nofollow">5x5.xml</a></td>
+<td>2009-10-19</td>
+<td>2013-10-09</td>
+<td>md</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>62</td>
+<td><a href="https://github.com/davep/5x5.el" rel="nofollow">5x5.el</a></td>
+<td>2017-03-31</td>
+<td>2020-03-05</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>63</td>
+<td><a href="https://github.com/davep/5x5-react" rel="nofollow">5x5-react</a></td>
+<td>2017-11-17</td>
+<td>2020-03-05</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>64</td>
+<td><a href="https://github.com/davep/5x5-for-Chrome" rel="nofollow">5x5-for-Chrome</a></td>
+<td>2013-05-26</td>
+<td>2014-05-08</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>65</td>
+<td><a href="https://github.com/davep/unbind.el" rel="nofollow">unbind.el</a></td>
+<td>2016-05-23</td>
+<td>2017-03-27</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>66</td>
+<td><a href="https://github.com/davep/w3ng" rel="nofollow">w3ng</a></td>
+<td>2019-11-02</td>
+<td>2019-12-25</td>
+<td>C</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>67</td>
+<td><a href="https://github.com/davep/mutt-alias.el" rel="nofollow">mutt-alias.el</a></td>
+<td>2016-05-23</td>
+<td>2022-12-17</td>
+<td>Emacs Lisp</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>68</td>
+<td><a href="https://github.com/davep/garble.el" rel="nofollow">garble.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>69</td>
+<td><a href="https://github.com/davep/handyurl.el" rel="nofollow">handyurl.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>70</td>
+<td><a href="https://github.com/davep/highlight-chars.el" rel="nofollow">highlight-chars.el</a></td>
+<td>2018-04-10</td>
+<td>2018-04-12</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>71</td>
+<td><a href="https://github.com/davep/home-ws.jl" rel="nofollow">home-ws.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>72</td>
+<td><a href="https://github.com/davep/icmp-info.el" rel="nofollow">icmp-info.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td><a href="https://github.com/davep/insert.el" rel="nofollow">insert.el</a></td>
+<td>2017-03-28</td>
+<td>2018-06-20</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>74</td>
+<td><a href="https://github.com/davep/is-a.el" rel="nofollow">is-a.el</a></td>
+<td>2017-05-05</td>
+<td>2020-06-08</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>75</td>
+<td><a href="https://github.com/davep/itch.el" rel="nofollow">itch.el</a></td>
+<td>2017-03-27</td>
+<td>2017-08-18</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>76</td>
+<td><a href="https://github.com/davep/journeys.julia" rel="nofollow">journeys.julia</a></td>
+<td>2019-11-11</td>
+<td>2019-11-12</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>77</td>
+<td><a href="https://github.com/davep/journeys.py" rel="nofollow">journeys.py</a></td>
+<td>2019-11-09</td>
+<td>2020-08-20</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>78</td>
+<td><a href="https://github.com/davep/graburl.el" rel="nofollow">graburl.el</a></td>
+<td>2017-07-07</td>
+<td>2017-07-07</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>79</td>
+<td><a href="https://github.com/davep/KeyboardEvents" rel="nofollow">KeyboardEvents</a></td>
+<td>2017-02-08</td>
+<td>2017-02-08</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td><a href="https://github.com/davep/keydrag.jl" rel="nofollow">keydrag.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>81</td>
+<td><a href="https://github.com/davep/gitweb.el" rel="nofollow">gitweb.el</a></td>
+<td>2019-07-29</td>
+<td>2019-07-29</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td><a href="https://github.com/davep/lbdb.el" rel="nofollow">lbdb.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>83</td>
+<td><a href="https://github.com/davep/longmacs.el" rel="nofollow">longmacs.el</a></td>
+<td>2017-03-31</td>
+<td>2017-05-04</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>84</td>
+<td><a href="https://github.com/davep/macdob.el" rel="nofollow">macdob.el</a></td>
+<td>2017-04-27</td>
+<td>2017-05-04</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>85</td>
+<td><a href="https://github.com/davep/macinfo.el" rel="nofollow">macinfo.el</a></td>
+<td>2017-04-28</td>
+<td>2017-05-04</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>86</td>
+<td><a href="https://github.com/davep/macnet" rel="nofollow">macnet</a></td>
+<td>2017-05-31</td>
+<td>2017-05-31</td>
+<td>Shell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>87</td>
+<td><a href="https://github.com/davep/make-phony.el" rel="nofollow">make-phony.el</a></td>
+<td>2018-11-29</td>
+<td>2019-06-25</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td><a href="https://github.com/davep/git-archaic" rel="nofollow">git-archaic</a></td>
+<td>2020-07-09</td>
+<td>2020-07-09</td>
+<td>Shell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td><a href="https://github.com/davep/mark-paragraph.el" rel="nofollow">mark-paragraph.el</a></td>
+<td>2021-06-24</td>
+<td>2021-06-24</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td><a href="https://github.com/davep/garble-track-plot" rel="nofollow">garble-track-plot</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Shell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td><a href="https://github.com/davep/moving.el" rel="nofollow">moving.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>92</td>
+<td><a href="https://github.com/davep/msig.el" rel="nofollow">msig.el</a></td>
+<td>2017-05-02</td>
+<td>2017-05-02</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td><a href="https://github.com/davep/funhead.el" rel="nofollow">funhead.el</a></td>
+<td>2019-01-22</td>
+<td>2020-08-18</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>94</td>
+<td><a href="https://github.com/davep/muttrc2html" rel="nofollow">muttrc2html</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Perl</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>95</td>
+<td><a href="https://github.com/davep/mvlist" rel="nofollow">mvlist</a></td>
+<td>2017-07-12</td>
+<td>2017-07-12</td>
+<td>C</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>96</td>
+<td><a href="https://github.com/davep/navigator.jl" rel="nofollow">navigator.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td><a href="https://github.com/davep/fscroll.el" rel="nofollow">fscroll.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td><a href="https://github.com/davep/ng2web" rel="nofollow">ng2web</a></td>
+<td>2021-11-05</td>
+<td>2022-03-31</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td><a href="https://github.com/davep/ngdb.py" rel="nofollow">ngdb.py</a></td>
+<td>2021-10-04</td>
+<td>2022-01-10</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td><a href="https://github.com/davep/ngn.el" rel="nofollow">ngn.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td><a href="https://github.com/davep/latest_workout" rel="nofollow">latest_workout</a></td>
+<td>2021-10-26</td>
+<td>2021-10-26</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td><a href="https://github.com/davep/nukneval.el" rel="nofollow">nukneval.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td><a href="https://github.com/davep/festival.jl" rel="nofollow">festival.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td><a href="https://github.com/davep/fasta.el" rel="nofollow">fasta.el</a></td>
+<td>2018-03-24</td>
+<td>2020-02-12</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td><a href="https://github.com/davep/extlogkeywords" rel="nofollow">extlogkeywords</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Ruby</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td><a href="https://github.com/davep/openpyxl-speed-issue" rel="nofollow">openpyxl-speed-issue</a></td>
+<td>2018-06-02</td>
+<td>2018-06-02</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td><a href="https://github.com/davep/org-davep-2bit" rel="nofollow">org-davep-2bit</a></td>
+<td>2020-08-08</td>
+<td>2020-08-22</td>
+<td>Common Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td><a href="https://github.com/davep/org-davep-cldict" rel="nofollow">org-davep-cldict</a></td>
+<td>2019-03-23</td>
+<td>2019-03-24</td>
+<td>Common Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td><a href="https://github.com/davep/equinox.el" rel="nofollow">equinox.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td><a href="https://github.com/davep/ensembl-REST" rel="nofollow">ensembl-REST</a></td>
+<td>2018-02-04</td>
+<td>2018-09-18</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td><a href="https://github.com/davep/org-davep-newsrc" rel="nofollow">org-davep-newsrc</a></td>
+<td>2019-03-23</td>
+<td>2019-03-23</td>
+<td>Common Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>112</td>
+<td><a href="https://github.com/davep/end-it.el" rel="nofollow">end-it.el</a></td>
+<td>2018-06-22</td>
+<td>2020-06-24</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td><a href="https://github.com/davep/eg.el" rel="nofollow">eg.el</a></td>
+<td>2017-05-10</td>
+<td>2018-07-08</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td><a href="https://github.com/davep/eg-OS2" rel="nofollow">eg-OS2</a></td>
+<td>2017-03-21</td>
+<td>2017-03-21</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>115</td>
+<td><a href="https://github.com/davep/do-over-directory-tree.jl" rel="nofollow">do-over-directory-tree.jl</a></td>
+<td>2019-03-23</td>
+<td>2019-03-23</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>116</td>
+<td><a href="https://github.com/davep/borked-venvs" rel="nofollow">borked-venvs</a></td>
+<td>2020-07-09</td>
+<td>2020-07-09</td>
+<td>Shell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>117</td>
+<td><a href="https://github.com/davep/dna.hs" rel="nofollow">dna.hs</a></td>
+<td>2019-04-07</td>
+<td>2019-04-08</td>
+<td>Haskell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>118</td>
+<td><a href="https://github.com/davep/pydscheck" rel="nofollow">pydscheck</a></td>
+<td>2018-08-02</td>
+<td>2022-03-28</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td><a href="https://github.com/davep/pypath.el" rel="nofollow">pypath.el</a></td>
+<td>2019-06-28</td>
+<td>2020-06-15</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td><a href="https://github.com/davep/xbase.el" rel="nofollow">xbase.el</a></td>
+<td>2016-05-23</td>
+<td>2019-07-14</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td><a href="https://github.com/davep/quickurl.el" rel="nofollow">quickurl.el</a></td>
+<td>2017-03-31</td>
+<td>2017-03-31</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td><a href="https://github.com/davep/discord.el" rel="nofollow">discord.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>123</td>
+<td><a href="https://github.com/davep/dgscan" rel="nofollow">dgscan</a></td>
+<td>2016-01-22</td>
+<td>2016-01-22</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td><a href="https://github.com/davep/DBF.java" rel="nofollow">DBF.java</a></td>
+<td>2019-07-13</td>
+<td>2019-07-13</td>
+<td>Java</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td><a href="https://github.com/davep/react-tutorial" rel="nofollow">react-tutorial</a></td>
+<td>2017-11-12</td>
+<td>2017-11-12</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td><a href="https://github.com/davep/davep" rel="nofollow">davep</a></td>
+<td>2020-07-09</td>
+<td>2020-07-09</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td><a href="https://github.com/davep/requote.el" rel="nofollow">requote.el</a></td>
+<td>2018-05-10</td>
+<td>2022-06-22</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>128</td>
+<td><a href="https://github.com/davep/csyScan" rel="nofollow">csyScan</a></td>
+<td>2017-11-08</td>
+<td>2017-11-08</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>129</td>
+<td><a href="https://github.com/davep/csrclr.el" rel="nofollow">csrclr.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>130</td>
+<td><a href="https://github.com/davep/constellations.el" rel="nofollow">constellations.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td><a href="https://github.com/davep/chrurl.el" rel="nofollow">chrurl.el</a></td>
+<td>2020-06-04</td>
+<td>2020-08-14</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>132</td>
+<td><a href="https://github.com/davep/setup-compile.el" rel="nofollow">setup-compile.el</a></td>
+<td>2017-04-20</td>
+<td>2017-05-04</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>133</td>
+<td><a href="https://github.com/davep/show-will.el" rel="nofollow">show-will.el</a></td>
+<td>2023-01-17</td>
+<td>2023-01-17</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>134</td>
+<td><a href="https://github.com/davep/chrurl" rel="nofollow">chrurl</a></td>
+<td>2020-07-08</td>
+<td>2020-07-08</td>
+<td>AppleScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td><a href="https://github.com/davep/smartsig.el" rel="nofollow">smartsig.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>136</td>
+<td><a href="https://github.com/davep/spamprobe.el" rel="nofollow">spamprobe.el</a></td>
+<td>2019-03-16</td>
+<td>2019-03-16</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td><a href="https://github.com/davep/bs4biodtest" rel="nofollow">bs4biodtest</a></td>
+<td>2018-09-28</td>
+<td>2018-09-28</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td><a href="https://github.com/davep/bootstrap-button-flash" rel="nofollow">bootstrap-button-flash</a></td>
+<td>2018-09-10</td>
+<td>2018-09-10</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td><a href="https://github.com/davep/become.el" rel="nofollow">become.el</a></td>
+<td>2017-03-28</td>
+<td>2017-03-28</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td><a href="https://github.com/davep/async-play" rel="nofollow">async-play</a></td>
+<td>2022-11-08</td>
+<td>2022-11-08</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td><a href="https://github.com/davep/ast-sandbox" rel="nofollow">ast-sandbox</a></td>
+<td>2022-11-13</td>
+<td>2022-11-16</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td><a href="https://github.com/davep/tiktok" rel="nofollow">tiktok</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>C</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td><a href="https://github.com/davep/tld.el" rel="nofollow">tld.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>144</td>
+<td><a href="https://github.com/davep/5x5-react-native" rel="nofollow">5x5-react-native</a></td>
+<td>2017-12-02</td>
+<td>2017-12-02</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td><a href="https://github.com/davep/.vscode.d" rel="nofollow">.vscode.d</a></td>
+<td>2017-12-01</td>
+<td>2017-12-01</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td><a href="https://github.com/davep/.vim" rel="nofollow">.vim</a></td>
+<td>2019-06-04</td>
+<td>2019-06-04</td>
+<td>Vim script</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td><a href="https://github.com/davep/.tmux.conf.d" rel="nofollow">.tmux.conf.d</a></td>
+<td>2020-07-07</td>
+<td>2020-08-18</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td><a href="https://github.com/davep/uptimes.jl" rel="nofollow">uptimes.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td><a href="https://github.com/davep/vrMandelbrot" rel="nofollow">vrMandelbrot</a></td>
+<td>2021-07-08</td>
+<td>2021-07-09</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td><a href="https://github.com/davep/vrTest" rel="nofollow">vrTest</a></td>
+<td>2021-03-13</td>
+<td>2021-07-08</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td><a href="https://github.com/davep/.pythonrc.d" rel="nofollow">.pythonrc.d</a></td>
+<td>2019-11-22</td>
+<td>2022-08-16</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td><a href="https://github.com/davep/wclass.jl" rel="nofollow">wclass.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td><a href="https://github.com/davep/webinfo.el" rel="nofollow">webinfo.el</a></td>
+<td>2016-05-23</td>
+<td>2016-05-23</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td><a href="https://github.com/davep/.inputrc.d" rel="nofollow">.inputrc.d</a></td>
+<td>2019-11-22</td>
+<td>2019-11-22</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td><a href="https://github.com/davep/weg1013" rel="nofollow">weg1013</a></td>
+<td>2019-07-13</td>
+<td>2019-07-13</td>
+<td>Pascal</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td><a href="https://github.com/davep/weight" rel="nofollow">weight</a></td>
+<td>2017-01-26</td>
+<td>2020-09-19</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td><a href="https://github.com/davep/winsplit.el" rel="nofollow">winsplit.el</a></td>
+<td>2017-04-10</td>
+<td>2019-03-27</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td><a href="https://github.com/davep/wordcloud.el" rel="nofollow">wordcloud.el</a></td>
+<td>2017-10-07</td>
+<td>2019-03-26</td>
+<td>Emacs Lisp</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td><a href="https://github.com/davep/ws-send-to.jl" rel="nofollow">ws-send-to.jl</a></td>
+<td>2019-03-10</td>
+<td>2019-03-10</td>
+<td>Julia</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td><a href="https://github.com/davep/textual-sandbox" rel="nofollow">textual-sandbox</a></td>
+<td>2022-10-28</td>
+<td>2022-10-28</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>301</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-davep-contributed-to" class="anchor" href="#the-repos-davep-contributed-to" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos davep contributed to</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>FIRSTDATE</th>
+<th>LASTEDATE</th>
+<th>PRCOUNT</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/Textualize/textual" rel="nofollow">textual</a></td>
+<td>2022-10-06</td>
+<td>2023-01-20</td>
+<td><a href="https://github.com/Textualize/textual/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">121</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/melpa/melpa" rel="nofollow">melpa</a></td>
+<td>2017-03-22</td>
+<td>2020-09-19</td>
+<td><a href="https://github.com/melpa/melpa/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">15</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/Textualize/rich" rel="nofollow">rich</a></td>
+<td>2022-08-05</td>
+<td>2023-01-18</td>
+<td><a href="https://github.com/Textualize/rich/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">11</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/willmcgugan/faqtory" rel="nofollow">faqtory</a></td>
+<td>2022-12-04</td>
+<td>2022-12-05</td>
+<td><a href="https://github.com/willmcgugan/faqtory/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">8</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/dasmoth/dalliance" rel="nofollow">dalliance</a></td>
+<td>2018-01-11</td>
+<td>2019-05-06</td>
+<td><a href="https://github.com/dasmoth/dalliance/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">7</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/chubin/cheat.sh" rel="nofollow">cheat.sh</a></td>
+<td>2017-06-15</td>
+<td>2018-08-06</td>
+<td><a href="https://github.com/chubin/cheat.sh/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">6</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/willmcgugan/textual-markdown" rel="nofollow">textual-markdown</a></td>
+<td>2022-12-17</td>
+<td>2022-12-17</td>
+<td><a href="https://github.com/willmcgugan/textual-markdown/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/darrenburns/rich-pixels" rel="nofollow">rich-pixels</a></td>
+<td>2022-11-09</td>
+<td>2022-11-21</td>
+<td><a href="https://github.com/darrenburns/rich-pixels/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/WaylonWalker/markata" rel="nofollow">markata</a></td>
+<td>2022-10-21</td>
+<td>2022-10-21</td>
+<td><a href="https://github.com/WaylonWalker/markata/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/shenlab-sinai/diffreps" rel="nofollow">diffreps</a></td>
+<td>2019-04-11</td>
+<td>2019-04-11</td>
+<td><a href="https://github.com/shenlab-sinai/diffreps/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/Textualize/textualize.io" rel="nofollow">textualize.io</a></td>
+<td>2022-12-04</td>
+<td>2022-12-04</td>
+<td><a href="https://github.com/Textualize/textualize.io/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/thomas-louvigne/emacs-can-do-that" rel="nofollow">emacs-can-do-that</a></td>
+<td>2019-04-11</td>
+<td>2019-04-11</td>
+<td><a href="https://github.com/thomas-louvigne/emacs-can-do-that/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/biodalliance/dalliance-web" rel="nofollow">dalliance-web</a></td>
+<td>2018-05-14</td>
+<td>2018-05-14</td>
+<td><a href="https://github.com/biodalliance/dalliance-web/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/bcbcarl/emacs-wttrin" rel="nofollow">emacs-wttrin</a></td>
+<td>2017-06-12</td>
+<td>2017-06-12</td>
+<td><a href="https://github.com/bcbcarl/emacs-wttrin/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/Damego/async-bored-api" rel="nofollow">async-bored-api</a></td>
+<td>2022-11-26</td>
+<td>2022-11-26</td>
+<td><a href="https://github.com/Damego/async-bored-api/pulls?q=is%3Apr+author%3Adavep" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td>179</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-davep-recent-stared-random-10" class="anchor" href="#the-repos-davep-recent-stared-random-10" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos davep recent stared (random 10)</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>STAREDDATE</th>
+<th>LAUGUAGE</th>
+<th>LATESTUPDATE</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/rodrigogiraoserrao/Secret-Santa" rel="nofollow">Secret-Santa</a></td>
+<td>2022-12-09</td>
+<td>Python</td>
+<td>2022-12-14</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/lllama/textual-transitions" rel="nofollow">textual-transitions</a></td>
+<td>2023-01-18</td>
+<td>Python</td>
+<td>2023-01-18</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/microsoft/GW-BASIC" rel="nofollow">GW-BASIC</a></td>
+<td>2022-03-07</td>
+<td>C++</td>
+<td>2023-01-19</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/hackclub/some-assembly-required" rel="nofollow">some-assembly-required</a></td>
+<td>2022-06-29</td>
+<td>Assembly</td>
+<td>2023-01-20</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/torognes/vsearch" rel="nofollow">vsearch</a></td>
+<td>2021-08-12</td>
+<td>C++</td>
+<td>2023-01-15</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/gbaromhunter/textual_adventure" rel="nofollow">textual_adventure</a></td>
+<td>2023-01-18</td>
+<td>Python</td>
+<td>2023-01-18</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/trentwirth/timescriber" rel="nofollow">timescriber</a></td>
+<td>2022-12-22</td>
+<td>Python</td>
+<td>2023-01-19</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/healeycodes/if-sad-send-cat" rel="nofollow">if-sad-send-cat</a></td>
+<td>2022-02-24</td>
+<td>HTML</td>
+<td>2023-01-13</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/mysteriousham73/PyKeplermatik" rel="nofollow">PyKeplermatik</a></td>
+<td>2023-01-16</td>
+<td>Python</td>
+<td>2023-01-17</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/captbaritone/webamp" rel="nofollow">webamp</a></td>
+<td>2021-04-15</td>
+<td>TypeScript</td>
+<td>2023-01-19</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+</body>
+</html>

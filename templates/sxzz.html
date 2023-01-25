@@ -1,0 +1,1867 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>sxzz</title>
+    <style>
+      body {
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+.main-link {
+  text-decoration: none;
+  color: inherit;
+}
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.markdown-body a {
+  background-color: transparent;
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+.markdown-body * {
+  box-sizing: border-box;
+}
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h1 {
+  font-size: 30px;
+}
+.markdown-body h2 {
+  font-size: 21px;
+}
+.markdown-body blockquote {
+  margin: 0;
+}
+.markdown-body dd {
+  margin-left: 0;
+}
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h5 {
+  font-size: 1em;
+}
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-body li>p {
+  margin-top: 16px;
+}
+.markdown-body dl {
+  padding: 0;
+}
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+.markdown-body table th {
+  font-weight: bold;
+}
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.markdown-body pre {
+  word-wrap: normal;
+}
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+}
+    </style>
+  </head>
+<body>
+	<div class="container p-4">
+	<main>
+	<div class="heading text-center">
+		<h1 class="display-1">
+		<a
+			href="https://github.com/yihong0618/github-readme-stats-server"
+			class="main-link"
+			>GitHub README Stats</a
+		>
+		</h1>
+		<p class="lead">Generate GitHub User README Profile</p>
+	</div>
+	<hr />
+	<form action="/generate" method="post">
+		<div class="input-group mb-4">
+		<input
+			class="form-control form-control-lg"
+			type="text"
+			placeholder="GitHub username"
+			aria-label="Input GitHub username"
+			name="r"
+			id="r"
+		/>
+		<button class="btn btn-primary">GO!</button>
+		</div>
+	</form>
+	</div>
+	</main>
+  <div class="tips">
+    <h4>Tips</h4>
+    <ul>
+      <li>
+        Add query string <code>--refresh</code> to clear the caches
+      </li>
+    </ul>
+  </div>
+  </main>
+  <footer>
+  <h4>Credits</h4>
+  <ul>
+    <li>
+      <a href="https://github.com/frostming">frostming</a>'s
+      <a href="https://github.com/frostming/tokei-pie-cooker">tokei-pie-cooker</a> project
+    </li>
+  </ul>
+  </footer>
+	</div>
+  <article class="markdown-body">
+    <h2><a name="the-repos-sxzz-created" class="anchor" href="#the-repos-sxzz-created" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>The repos sxzz created</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>START</th>
+<th>UPDATE</th>
+<th>LAUGUAGE</th>
+<th>STARS</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/sxzz/unplugin-vue-macros" rel="nofollow">unplugin-vue-macros</a></td>
+<td>2022-02-08</td>
+<td>2023-01-19</td>
+<td>TypeScript</td>
+<td>658</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/sxzz/vue-functional-ref" rel="nofollow">vue-functional-ref</a></td>
+<td>2022-08-30</td>
+<td>2023-01-11</td>
+<td>TypeScript</td>
+<td>141</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/sxzz/element-plus-best-practices" rel="nofollow">element-plus-best-practices</a></td>
+<td>2021-12-13</td>
+<td>2023-01-18</td>
+<td>TypeScript</td>
+<td>120</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/sxzz/free-hls-live" rel="nofollow">free-hls-live</a></td>
+<td>2020-02-25</td>
+<td>2022-12-22</td>
+<td>TypeScript</td>
+<td>67</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/sxzz/unplugin-vue" rel="nofollow">unplugin-vue</a></td>
+<td>2021-12-28</td>
+<td>2023-01-17</td>
+<td>TypeScript</td>
+<td>65</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/sxzz/eslint-config" rel="nofollow">eslint-config</a></td>
+<td>2021-06-19</td>
+<td>2023-01-16</td>
+<td>JavaScript</td>
+<td>34</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/sxzz/unplugin-ast" rel="nofollow">unplugin-ast</a></td>
+<td>2022-06-22</td>
+<td>2022-12-03</td>
+<td>TypeScript</td>
+<td>32</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/sxzz/element-plus-next" rel="nofollow">element-plus-next</a></td>
+<td>2022-03-14</td>
+<td>2023-01-18</td>
+<td>Vue</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/sxzz/github-block-tool" rel="nofollow">github-block-tool</a></td>
+<td>2022-03-03</td>
+<td>2022-08-24</td>
+<td>TypeScript</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/sxzz/stale-dep" rel="nofollow">stale-dep</a></td>
+<td>2023-01-11</td>
+<td>2023-01-18</td>
+<td>TypeScript</td>
+<td>22</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/sxzz/free-hls.js" rel="nofollow">free-hls.js</a></td>
+<td>2020-02-24</td>
+<td>2022-12-21</td>
+<td>JavaScript</td>
+<td>19</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/sxzz/unplugin-glob" rel="nofollow">unplugin-glob</a></td>
+<td>2022-07-31</td>
+<td>2023-01-05</td>
+<td>TypeScript</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/sxzz/awesome-element-plus" rel="nofollow">awesome-element-plus</a></td>
+<td>2021-12-13</td>
+<td>2022-12-26</td>
+<td>md</td>
+<td>16</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/sxzz/awesome" rel="nofollow">awesome</a></td>
+<td>2022-08-31</td>
+<td>2022-12-18</td>
+<td>Shell</td>
+<td>16</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/sxzz/create" rel="nofollow">create</a></td>
+<td>2022-09-05</td>
+<td>2022-10-23</td>
+<td>TypeScript</td>
+<td>11</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://github.com/sxzz/vue5" rel="nofollow">vue5</a></td>
+<td>2022-10-21</td>
+<td>2022-11-29</td>
+<td>TypeScript</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://github.com/sxzz/monorepo-starter" rel="nofollow">monorepo-starter</a></td>
+<td>2022-10-08</td>
+<td>2023-01-09</td>
+<td>TypeScript</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://github.com/sxzz/unplugin-jsx-string" rel="nofollow">unplugin-jsx-string</a></td>
+<td>2022-06-06</td>
+<td>2022-09-03</td>
+<td>TypeScript</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://github.com/sxzz/element-plus-solidjs" rel="nofollow">element-plus-solidjs</a></td>
+<td>2022-07-24</td>
+<td>2023-01-12</td>
+<td>TypeScript</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://github.com/sxzz/unplugin-vue-jsx" rel="nofollow">unplugin-vue-jsx</a></td>
+<td>2022-07-09</td>
+<td>2022-11-15</td>
+<td>TypeScript</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://github.com/sxzz/element-plus-react" rel="nofollow">element-plus-react</a></td>
+<td>2022-02-19</td>
+<td>2022-10-21</td>
+<td>TypeScript</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://github.com/sxzz/ast-walker-scope" rel="nofollow">ast-walker-scope</a></td>
+<td>2022-07-29</td>
+<td>2023-01-09</td>
+<td>TypeScript</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://github.com/sxzz/config" rel="nofollow">config</a></td>
+<td>2022-06-24</td>
+<td>2022-09-06</td>
+<td>Shell</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://github.com/sxzz/talks" rel="nofollow">talks</a></td>
+<td>2022-11-16</td>
+<td>2022-12-15</td>
+<td>Vue</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://github.com/sxzz/sxzz" rel="nofollow">sxzz</a></td>
+<td>2020-07-16</td>
+<td>2022-12-22</td>
+<td>Shell</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://github.com/sxzz/swc-plugin-vue2-jsx" rel="nofollow">swc-plugin-vue2-jsx</a></td>
+<td>2022-07-03</td>
+<td>2022-08-18</td>
+<td>TypeScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://github.com/sxzz/jike-plus" rel="nofollow">jike-plus</a></td>
+<td>2021-11-25</td>
+<td>2021-12-24</td>
+<td>TypeScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://github.com/sxzz/nuxt-functional-ref" rel="nofollow">nuxt-functional-ref</a></td>
+<td>2022-10-10</td>
+<td>2022-10-12</td>
+<td>Vue</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://github.com/sxzz/uncomp" rel="nofollow">uncomp</a></td>
+<td>2022-02-19</td>
+<td>2022-09-24</td>
+<td>TypeScript</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://github.com/sxzz/lesson-schedule" rel="nofollow">lesson-schedule</a></td>
+<td>2019-07-05</td>
+<td>2022-10-09</td>
+<td>JavaScript</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://github.com/sxzz/ancient-blog" rel="nofollow">ancient-blog</a></td>
+<td>2022-09-29</td>
+<td>2022-09-30</td>
+<td>JavaScript</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://github.com/sxzz/blog-vue" rel="nofollow">blog-vue</a></td>
+<td>2018-11-11</td>
+<td>2022-09-29</td>
+<td>Vue</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://github.com/sxzz/chrome-extension-template" rel="nofollow">chrome-extension-template</a></td>
+<td>2020-08-29</td>
+<td>2021-06-13</td>
+<td>JavaScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://github.com/sxzz/unplugin-combine" rel="nofollow">unplugin-combine</a></td>
+<td>2022-08-17</td>
+<td>2022-12-15</td>
+<td>TypeScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://github.com/sxzz/esbuild-plugin-transform" rel="nofollow">esbuild-plugin-transform</a></td>
+<td>2022-06-25</td>
+<td>2022-12-04</td>
+<td>TypeScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://github.com/sxzz/sponsors" rel="nofollow">sponsors</a></td>
+<td>2022-03-07</td>
+<td>2023-01-09</td>
+<td>TypeScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://github.com/sxzz/element-plus-tauri-starter" rel="nofollow">element-plus-tauri-starter</a></td>
+<td>2022-06-16</td>
+<td>2022-10-21</td>
+<td>TypeScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://github.com/sxzz/fuck-jike-image" rel="nofollow">fuck-jike-image</a></td>
+<td>2022-05-08</td>
+<td>2022-05-08</td>
+<td>TypeScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://github.com/sxzz/swc-benchmark" rel="nofollow">swc-benchmark</a></td>
+<td>2022-11-29</td>
+<td>2022-11-29</td>
+<td>HTML</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://github.com/sxzz/vue-macros-storybook" rel="nofollow">vue-macros-storybook</a></td>
+<td>2022-11-11</td>
+<td>2022-12-09</td>
+<td>TypeScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>41</td>
+<td><a href="https://github.com/sxzz/kg-downloader" rel="nofollow">kg-downloader</a></td>
+<td>2022-01-04</td>
+<td>2022-08-03</td>
+<td>TypeScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>42</td>
+<td><a href="https://github.com/sxzz/sxzz.github.io" rel="nofollow">sxzz.github.io</a></td>
+<td>2020-10-01</td>
+<td>2022-07-02</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>43</td>
+<td><a href="https://github.com/sxzz/contribute" rel="nofollow">contribute</a></td>
+<td>2022-07-20</td>
+<td>2022-10-14</td>
+<td>md</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>44</td>
+<td><a href="https://github.com/sxzz/unplugin-starter" rel="nofollow">unplugin-starter</a></td>
+<td>2022-06-20</td>
+<td>2022-06-20</td>
+<td>TypeScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>45</td>
+<td><a href="https://github.com/sxzz/static" rel="nofollow">static</a></td>
+<td>2022-07-02</td>
+<td>2022-07-02</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>46</td>
+<td><a href="https://github.com/sxzz/haya-vue" rel="nofollow">haya-vue</a></td>
+<td>2022-06-26</td>
+<td>2022-06-26</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td><a href="https://github.com/sxzz/homebrew-brew" rel="nofollow">homebrew-brew</a></td>
+<td>2021-05-16</td>
+<td>2021-11-27</td>
+<td>Ruby</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td><a href="https://github.com/sxzz/unplugin-issue" rel="nofollow">unplugin-issue</a></td>
+<td>2022-06-02</td>
+<td>2022-06-02</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>49</td>
+<td><a href="https://github.com/sxzz/esbuild-plugin" rel="nofollow">esbuild-plugin</a></td>
+<td>2022-10-03</td>
+<td>2022-10-03</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td><a href="https://github.com/sxzz/jike-ws" rel="nofollow">jike-ws</a></td>
+<td>2022-04-18</td>
+<td>2022-04-18</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>51</td>
+<td><a href="https://github.com/sxzz/esbuild-esm-loader-issue" rel="nofollow">esbuild-esm-loader-issue</a></td>
+<td>2022-05-20</td>
+<td>2022-05-20</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://github.com/sxzz/.github" rel="nofollow">.github</a></td>
+<td>2022-07-20</td>
+<td>2022-07-20</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>53</td>
+<td><a href="https://github.com/sxzz/dokumen" rel="nofollow">dokumen</a></td>
+<td>2022-02-20</td>
+<td>2022-04-21</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>54</td>
+<td><a href="https://github.com/sxzz/vite-hmr-issue" rel="nofollow">vite-hmr-issue</a></td>
+<td>2022-05-18</td>
+<td>2022-05-18</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>55</td>
+<td><a href="https://github.com/sxzz/vite-optimize-deps" rel="nofollow">vite-optimize-deps</a></td>
+<td>2022-06-24</td>
+<td>2022-06-24</td>
+<td>CSS</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>56</td>
+<td><a href="https://github.com/sxzz/jiti-issue" rel="nofollow">jiti-issue</a></td>
+<td>2022-04-30</td>
+<td>2022-05-02</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>57</td>
+<td><a href="https://github.com/sxzz/vitest-issue" rel="nofollow">vitest-issue</a></td>
+<td>2022-04-11</td>
+<td>2022-04-11</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>58</td>
+<td><a href="https://github.com/sxzz/blog-go" rel="nofollow">blog-go</a></td>
+<td>2018-11-12</td>
+<td>2019-06-06</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>59</td>
+<td><a href="https://github.com/sxzz/onedjs" rel="nofollow">onedjs</a></td>
+<td>2022-04-29</td>
+<td>2022-04-29</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>60</td>
+<td><a href="https://github.com/sxzz/vue2-define-options-demo" rel="nofollow">vue2-define-options-demo</a></td>
+<td>2022-03-17</td>
+<td>2022-03-17</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>61</td>
+<td><a href="https://github.com/sxzz/vue2-directive-demo" rel="nofollow">vue2-directive-demo</a></td>
+<td>2022-08-15</td>
+<td>2022-08-15</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>62</td>
+<td><a href="https://github.com/sxzz/vue2-directive-issue" rel="nofollow">vue2-directive-issue</a></td>
+<td>2022-08-15</td>
+<td>2022-08-15</td>
+<td>Vue</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>63</td>
+<td><a href="https://github.com/sxzz/vue2-esbuild-demo" rel="nofollow">vue2-esbuild-demo</a></td>
+<td>2022-01-10</td>
+<td>2022-01-10</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>64</td>
+<td><a href="https://github.com/sxzz/vite3-optimize-deps" rel="nofollow">vite3-optimize-deps</a></td>
+<td>2022-06-26</td>
+<td>2022-06-26</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1385</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-sxzz-contributed-to" class="anchor" href="#the-repos-sxzz-contributed-to" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos sxzz contributed to</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>FIRSTDATE</th>
+<th>LASTEDATE</th>
+<th>PRCOUNT</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/element-plus/element-plus" rel="nofollow">element-plus</a></td>
+<td>2021-08-21</td>
+<td>2022-09-22</td>
+<td><a href="https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">411</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/vuejs/core" rel="nofollow">core</a></td>
+<td>2021-11-30</td>
+<td>2023-01-17</td>
+<td><a href="https://github.com/vuejs/core/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">47</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/elk-zone/elk" rel="nofollow">elk</a></td>
+<td>2022-11-23</td>
+<td>2023-01-15</td>
+<td><a href="https://github.com/elk-zone/elk/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">31</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/antfu/unplugin-vue-components" rel="nofollow">unplugin-vue-components</a></td>
+<td>2021-10-08</td>
+<td>2022-12-10</td>
+<td><a href="https://github.com/antfu/unplugin-vue-components/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">18</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/vueuse/vueuse" rel="nofollow">vueuse</a></td>
+<td>2020-11-26</td>
+<td>2023-01-02</td>
+<td><a href="https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">13</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/vuejs/repl" rel="nofollow">repl</a></td>
+<td>2021-12-16</td>
+<td>2023-01-02</td>
+<td><a href="https://github.com/vuejs/repl/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">11</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/antfu/unplugin-auto-import" rel="nofollow">unplugin-auto-import</a></td>
+<td>2021-11-27</td>
+<td>2022-05-17</td>
+<td><a href="https://github.com/antfu/unplugin-auto-import/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">10</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/unjs/unplugin" rel="nofollow">unplugin</a></td>
+<td>2022-01-20</td>
+<td>2022-12-11</td>
+<td><a href="https://github.com/unjs/unplugin/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">10</a></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/Shinigami92/eslint-define-config" rel="nofollow">eslint-define-config</a></td>
+<td>2022-10-21</td>
+<td>2023-01-10</td>
+<td><a href="https://github.com/Shinigami92/eslint-define-config/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">9</a></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/vitejs/vite" rel="nofollow">vite</a></td>
+<td>2022-01-19</td>
+<td>2022-11-12</td>
+<td><a href="https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">9</a></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/neet/masto.js" rel="nofollow">masto.js</a></td>
+<td>2023-01-07</td>
+<td>2023-01-12</td>
+<td><a href="https://github.com/neet/masto.js/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">8</a></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/rollup/rollup" rel="nofollow">rollup</a></td>
+<td>2022-10-10</td>
+<td>2022-10-15</td>
+<td><a href="https://github.com/rollup/rollup/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">5</a></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/antfu/vite-plugin-inspect" rel="nofollow">vite-plugin-inspect</a></td>
+<td>2021-10-13</td>
+<td>2022-12-10</td>
+<td><a href="https://github.com/antfu/vite-plugin-inspect/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">4</a></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/unjs/unimport" rel="nofollow">unimport</a></td>
+<td>2022-05-29</td>
+<td>2022-08-03</td>
+<td><a href="https://github.com/unjs/unimport/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">4</a></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/antfu/unplugin-vue2-script-setup" rel="nofollow">unplugin-vue2-script-setup</a></td>
+<td>2021-08-26</td>
+<td>2022-05-24</td>
+<td><a href="https://github.com/antfu/unplugin-vue2-script-setup/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">4</a></td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://github.com/DIYgod/RSSHub" rel="nofollow">RSSHub</a></td>
+<td>2019-02-15</td>
+<td>2022-11-19</td>
+<td><a href="https://github.com/DIYgod/RSSHub/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://github.com/antfu/unplugin-starter" rel="nofollow">unplugin-starter</a></td>
+<td>2022-07-04</td>
+<td>2022-07-04</td>
+<td><a href="https://github.com/antfu/unplugin-starter/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://github.com/opensource-f2f/episode" rel="nofollow">episode</a></td>
+<td>2022-05-10</td>
+<td>2022-10-12</td>
+<td><a href="https://github.com/opensource-f2f/episode/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://github.com/ShenQingchuan/tsc-err-dirs" rel="nofollow">tsc-err-dirs</a></td>
+<td>2022-09-17</td>
+<td>2022-09-17</td>
+<td><a href="https://github.com/ShenQingchuan/tsc-err-dirs/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://github.com/antfu/ni" rel="nofollow">ni</a></td>
+<td>2022-11-08</td>
+<td>2023-01-09</td>
+<td><a href="https://github.com/antfu/ni/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://github.com/antfu/pkg-exports" rel="nofollow">pkg-exports</a></td>
+<td>2022-06-29</td>
+<td>2022-08-01</td>
+<td><a href="https://github.com/antfu/pkg-exports/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://github.com/open-data-plan/g2plot-vue" rel="nofollow">g2plot-vue</a></td>
+<td>2021-05-10</td>
+<td>2021-05-18</td>
+<td><a href="https://github.com/open-data-plan/g2plot-vue/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://github.com/antfu/vitesse-lite" rel="nofollow">vitesse-lite</a></td>
+<td>2022-06-11</td>
+<td>2022-11-23</td>
+<td><a href="https://github.com/antfu/vitesse-lite/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://github.com/iamkun/dayjs" rel="nofollow">dayjs</a></td>
+<td>2022-04-19</td>
+<td>2022-09-20</td>
+<td><a href="https://github.com/iamkun/dayjs/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://github.com/opensource-f2f/website" rel="nofollow">website</a></td>
+<td>2022-09-24</td>
+<td>2022-11-18</td>
+<td><a href="https://github.com/opensource-f2f/website/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://github.com/webfansplz/vtui-npm" rel="nofollow">vtui-npm</a></td>
+<td>2022-11-07</td>
+<td>2022-11-08</td>
+<td><a href="https://github.com/webfansplz/vtui-npm/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://github.com/vuejs-translations/docs-zh-cn" rel="nofollow">docs-zh-cn</a></td>
+<td>2022-02-07</td>
+<td>2022-07-23</td>
+<td><a href="https://github.com/vuejs-translations/docs-zh-cn/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://github.com/antfu/local-pkg" rel="nofollow">local-pkg</a></td>
+<td>2022-07-11</td>
+<td>2022-07-11</td>
+<td><a href="https://github.com/antfu/local-pkg/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://github.com/sxzz-dev/changesets-demo" rel="nofollow">changesets-demo</a></td>
+<td>2022-09-30</td>
+<td>2022-09-30</td>
+<td><a href="https://github.com/sxzz-dev/changesets-demo/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://github.com/johnsoncodehk/volar" rel="nofollow">volar</a></td>
+<td>2022-08-04</td>
+<td>2022-10-12</td>
+<td><a href="https://github.com/johnsoncodehk/volar/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://github.com/antfu/unplugin-icons" rel="nofollow">unplugin-icons</a></td>
+<td>2021-12-13</td>
+<td>2022-08-04</td>
+<td><a href="https://github.com/antfu/unplugin-icons/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://github.com/antfu/case-police" rel="nofollow">case-police</a></td>
+<td>2022-03-31</td>
+<td>2022-05-24</td>
+<td><a href="https://github.com/antfu/case-police/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://github.com/antfu/vite-ssg" rel="nofollow">vite-ssg</a></td>
+<td>2022-08-29</td>
+<td>2022-11-18</td>
+<td><a href="https://github.com/antfu/vite-ssg/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://github.com/unocss/unocss" rel="nofollow">unocss</a></td>
+<td>2022-03-20</td>
+<td>2022-12-10</td>
+<td><a href="https://github.com/unocss/unocss/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://github.com/antfu/vscode-file-nesting-config" rel="nofollow">vscode-file-nesting-config</a></td>
+<td>2022-03-08</td>
+<td>2022-03-08</td>
+<td><a href="https://github.com/antfu/vscode-file-nesting-config/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://github.com/ElemeFE/element" rel="nofollow">element</a></td>
+<td>2019-10-30</td>
+<td>2020-04-16</td>
+<td><a href="https://github.com/ElemeFE/element/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://github.com/junbaor/homebrew-brew" rel="nofollow">homebrew-brew</a></td>
+<td>2021-11-27</td>
+<td>2021-11-27</td>
+<td><a href="https://github.com/junbaor/homebrew-brew/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://github.com/TabSpace/gulp-qcloud-cos-upload" rel="nofollow">gulp-qcloud-cos-upload</a></td>
+<td>2020-11-21</td>
+<td>2020-11-21</td>
+<td><a href="https://github.com/TabSpace/gulp-qcloud-cos-upload/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://github.com/antfu/.github" rel="nofollow">.github</a></td>
+<td>2022-07-20</td>
+<td>2022-07-20</td>
+<td><a href="https://github.com/antfu/.github/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://github.com/zouhangwithsweet/vue-components-lib-seed" rel="nofollow">vue-components-lib-seed</a></td>
+<td>2022-01-26</td>
+<td>2022-01-26</td>
+<td><a href="https://github.com/zouhangwithsweet/vue-components-lib-seed/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>41</td>
+<td><a href="https://github.com/vitejs/vite-plugin-vue2-jsx" rel="nofollow">vite-plugin-vue2-jsx</a></td>
+<td>2022-12-11</td>
+<td>2022-12-11</td>
+<td><a href="https://github.com/vitejs/vite-plugin-vue2-jsx/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>42</td>
+<td><a href="https://github.com/egoist/tsup" rel="nofollow">tsup</a></td>
+<td>2022-06-19</td>
+<td>2022-06-19</td>
+<td><a href="https://github.com/egoist/tsup/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>43</td>
+<td><a href="https://github.com/vuejs/jsx-vue2" rel="nofollow">jsx-vue2</a></td>
+<td>2022-07-03</td>
+<td>2022-07-03</td>
+<td><a href="https://github.com/vuejs/jsx-vue2/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>44</td>
+<td><a href="https://github.com/vue-terminal/vue-termui" rel="nofollow">vue-termui</a></td>
+<td>2022-11-19</td>
+<td>2022-11-19</td>
+<td><a href="https://github.com/vue-terminal/vue-termui/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>45</td>
+<td><a href="https://github.com/posva/unplugin-vue-router" rel="nofollow">unplugin-vue-router</a></td>
+<td>2022-07-04</td>
+<td>2022-07-04</td>
+<td><a href="https://github.com/posva/unplugin-vue-router/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>46</td>
+<td><a href="https://github.com/tauri-apps/tauri" rel="nofollow">tauri</a></td>
+<td>2022-12-10</td>
+<td>2022-12-10</td>
+<td><a href="https://github.com/tauri-apps/tauri/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>47</td>
+<td><a href="https://github.com/gizmo-ds/misstodon" rel="nofollow">misstodon</a></td>
+<td>2023-01-20</td>
+<td>2023-01-20</td>
+<td><a href="https://github.com/gizmo-ds/misstodon/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>48</td>
+<td><a href="https://github.com/HMUniversity/Colleges" rel="nofollow">Colleges</a></td>
+<td>2023-01-06</td>
+<td>2023-01-06</td>
+<td><a href="https://github.com/HMUniversity/Colleges/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>49</td>
+<td><a href="https://github.com/hyb1996/AutoJs-Docs" rel="nofollow">AutoJs-Docs</a></td>
+<td>2017-12-28</td>
+<td>2017-12-28</td>
+<td><a href="https://github.com/hyb1996/AutoJs-Docs/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>50</td>
+<td><a href="https://github.com/vuejs/rfcs" rel="nofollow">rfcs</a></td>
+<td>2022-02-25</td>
+<td>2022-02-25</td>
+<td><a href="https://github.com/vuejs/rfcs/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>51</td>
+<td><a href="https://github.com/javascript-obfuscator/javascript-obfuscator" rel="nofollow">javascript-obfuscator</a></td>
+<td>2021-10-10</td>
+<td>2021-10-10</td>
+<td><a href="https://github.com/javascript-obfuscator/javascript-obfuscator/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://github.com/vitejs/vite-plugin-vue2" rel="nofollow">vite-plugin-vue2</a></td>
+<td>2022-07-04</td>
+<td>2022-07-04</td>
+<td><a href="https://github.com/vitejs/vite-plugin-vue2/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>53</td>
+<td><a href="https://github.com/YunYouJun/friends" rel="nofollow">friends</a></td>
+<td>2022-07-02</td>
+<td>2022-07-02</td>
+<td><a href="https://github.com/YunYouJun/friends/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>54</td>
+<td><a href="https://github.com/vikyd/chromium-history-version-crawler" rel="nofollow">chromium-history-version-crawler</a></td>
+<td>2022-06-08</td>
+<td>2022-06-08</td>
+<td><a href="https://github.com/vikyd/chromium-history-version-crawler/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>55</td>
+<td><a href="https://github.com/nuxt/modules" rel="nofollow">modules</a></td>
+<td>2023-01-04</td>
+<td>2023-01-04</td>
+<td><a href="https://github.com/nuxt/modules/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>56</td>
+<td><a href="https://github.com/raycast/extensions" rel="nofollow">extensions</a></td>
+<td>2022-07-30</td>
+<td>2022-07-30</td>
+<td><a href="https://github.com/raycast/extensions/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>57</td>
+<td><a href="https://github.com/Crossbell-Box/crossbell.io" rel="nofollow">crossbell.io</a></td>
+<td>2022-11-21</td>
+<td>2022-11-21</td>
+<td><a href="https://github.com/Crossbell-Box/crossbell.io/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>58</td>
+<td><a href="https://github.com/Crossbell-Box/OperatorSync" rel="nofollow">OperatorSync</a></td>
+<td>2022-11-20</td>
+<td>2022-11-20</td>
+<td><a href="https://github.com/Crossbell-Box/OperatorSync/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>59</td>
+<td><a href="https://github.com/element-plus/unplugin-element-plus" rel="nofollow">unplugin-element-plus</a></td>
+<td>2021-09-11</td>
+<td>2021-09-11</td>
+<td><a href="https://github.com/element-plus/unplugin-element-plus/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>60</td>
+<td><a href="https://github.com/ldwonday/zh-address-parse" rel="nofollow">zh-address-parse</a></td>
+<td>2020-12-28</td>
+<td>2020-12-28</td>
+<td><a href="https://github.com/ldwonday/zh-address-parse/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>61</td>
+<td><a href="https://github.com/actions-cool/issues-helper" rel="nofollow">issues-helper</a></td>
+<td>2021-12-10</td>
+<td>2021-12-10</td>
+<td><a href="https://github.com/actions-cool/issues-helper/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>62</td>
+<td><a href="https://github.com/vueuse/vue-demi" rel="nofollow">vue-demi</a></td>
+<td>2021-10-09</td>
+<td>2021-10-09</td>
+<td><a href="https://github.com/vueuse/vue-demi/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>63</td>
+<td><a href="https://github.com/greenpress/vuex-composition-helpers" rel="nofollow">vuex-composition-helpers</a></td>
+<td>2021-07-06</td>
+<td>2021-07-06</td>
+<td><a href="https://github.com/greenpress/vuex-composition-helpers/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>64</td>
+<td><a href="https://github.com/vuejs/vue-template-explorer" rel="nofollow">vue-template-explorer</a></td>
+<td>2022-12-23</td>
+<td>2022-12-23</td>
+<td><a href="https://github.com/vuejs/vue-template-explorer/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>65</td>
+<td><a href="https://github.com/pnpm/pnpm.github.io" rel="nofollow">pnpm.github.io</a></td>
+<td>2022-04-01</td>
+<td>2022-04-01</td>
+<td><a href="https://github.com/pnpm/pnpm.github.io/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>66</td>
+<td><a href="https://github.com/vitest-dev/vitest" rel="nofollow">vitest</a></td>
+<td>2022-06-24</td>
+<td>2022-06-24</td>
+<td><a href="https://github.com/vitest-dev/vitest/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>67</td>
+<td><a href="https://github.com/vikyd/download-chromium-history-version-src" rel="nofollow">download-chromium-history-version-src</a></td>
+<td>2022-06-08</td>
+<td>2022-06-08</td>
+<td><a href="https://github.com/vikyd/download-chromium-history-version-src/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>68</td>
+<td><a href="https://github.com/antfu/vue-minesweeper" rel="nofollow">vue-minesweeper</a></td>
+<td>2022-03-12</td>
+<td>2022-03-12</td>
+<td><a href="https://github.com/antfu/vue-minesweeper/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>69</td>
+<td><a href="https://github.com/antfu/eslint-config" rel="nofollow">eslint-config</a></td>
+<td>2023-01-09</td>
+<td>2023-01-09</td>
+<td><a href="https://github.com/antfu/eslint-config/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>70</td>
+<td><a href="https://github.com/antfu/vitesse" rel="nofollow">vitesse</a></td>
+<td>2022-11-23</td>
+<td>2022-11-23</td>
+<td><a href="https://github.com/antfu/vitesse/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>71</td>
+<td><a href="https://github.com/nuxt/framework" rel="nofollow">framework</a></td>
+<td>2022-12-10</td>
+<td>2022-12-10</td>
+<td><a href="https://github.com/nuxt/framework/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>72</td>
+<td><a href="https://github.com/unjs/changelogen" rel="nofollow">changelogen</a></td>
+<td>2022-06-17</td>
+<td>2022-06-17</td>
+<td><a href="https://github.com/unjs/changelogen/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>73</td>
+<td><a href="https://github.com/vuejs/vue" rel="nofollow">vue</a></td>
+<td>2022-07-04</td>
+<td>2022-07-04</td>
+<td><a href="https://github.com/vuejs/vue/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>74</td>
+<td><a href="https://github.com/adamreisnz/replace-in-file" rel="nofollow">replace-in-file</a></td>
+<td>2022-10-08</td>
+<td>2022-10-08</td>
+<td><a href="https://github.com/adamreisnz/replace-in-file/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>75</td>
+<td><a href="https://github.com/esbuild/community-plugins" rel="nofollow">community-plugins</a></td>
+<td>2022-08-17</td>
+<td>2022-08-17</td>
+<td><a href="https://github.com/esbuild/community-plugins/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>76</td>
+<td><a href="https://github.com/layui/laydate" rel="nofollow">laydate</a></td>
+<td>2019-06-19</td>
+<td>2019-06-19</td>
+<td><a href="https://github.com/layui/laydate/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>77</td>
+<td><a href="https://github.com/unjs/consola" rel="nofollow">consola</a></td>
+<td>2022-09-10</td>
+<td>2022-09-10</td>
+<td><a href="https://github.com/unjs/consola/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>78</td>
+<td><a href="https://github.com/tolking/components-helper" rel="nofollow">components-helper</a></td>
+<td>2021-12-09</td>
+<td>2021-12-09</td>
+<td><a href="https://github.com/tolking/components-helper/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>79</td>
+<td><a href="https://github.com/element-plus/element-plus-icons" rel="nofollow">element-plus-icons</a></td>
+<td>2022-03-20</td>
+<td>2022-03-20</td>
+<td><a href="https://github.com/element-plus/element-plus-icons/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>80</td>
+<td><a href="https://github.com/LGBT-CN/LGBTQIA-In-China" rel="nofollow">LGBTQIA-In-China</a></td>
+<td>2022-05-04</td>
+<td>2022-05-04</td>
+<td><a href="https://github.com/LGBT-CN/LGBTQIA-In-China/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>81</td>
+<td><a href="https://github.com/antfu/changelogithub" rel="nofollow">changelogithub</a></td>
+<td>2023-01-11</td>
+<td>2023-01-11</td>
+<td><a href="https://github.com/antfu/changelogithub/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>82</td>
+<td><a href="https://github.com/ast-grep/ast-grep" rel="nofollow">ast-grep</a></td>
+<td>2022-08-14</td>
+<td>2022-08-14</td>
+<td><a href="https://github.com/ast-grep/ast-grep/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>83</td>
+<td><a href="https://github.com/webfansplz/vtui-repl" rel="nofollow">vtui-repl</a></td>
+<td>2022-12-01</td>
+<td>2022-12-01</td>
+<td><a href="https://github.com/webfansplz/vtui-repl/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>84</td>
+<td><a href="https://github.com/FabioAntunes/fish-nvm" rel="nofollow">fish-nvm</a></td>
+<td>2022-04-13</td>
+<td>2022-04-13</td>
+<td><a href="https://github.com/FabioAntunes/fish-nvm/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>85</td>
+<td><a href="https://github.com/xujj277/moore-ui" rel="nofollow">moore-ui</a></td>
+<td>2021-09-15</td>
+<td>2021-09-15</td>
+<td><a href="https://github.com/xujj277/moore-ui/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>86</td>
+<td><a href="https://github.com/node-fetch/node-fetch" rel="nofollow">node-fetch</a></td>
+<td>2022-05-04</td>
+<td>2022-05-04</td>
+<td><a href="https://github.com/node-fetch/node-fetch/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>87</td>
+<td><a href="https://github.com/esbuild-kit/esm-loader" rel="nofollow">esm-loader</a></td>
+<td>2022-05-20</td>
+<td>2022-05-20</td>
+<td><a href="https://github.com/esbuild-kit/esm-loader/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>88</td>
+<td><a href="https://github.com/JiangWeixian/awesome-website-shortcuts" rel="nofollow">awesome-website-shortcuts</a></td>
+<td>2022-01-10</td>
+<td>2022-01-10</td>
+<td><a href="https://github.com/JiangWeixian/awesome-website-shortcuts/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>89</td>
+<td><a href="https://github.com/vuejs/awesome-vue" rel="nofollow">awesome-vue</a></td>
+<td>2021-11-12</td>
+<td>2021-11-12</td>
+<td><a href="https://github.com/vuejs/awesome-vue/pulls?q=is%3Apr+author%3Asxzz" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td>694</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-sxzz-recent-stared-random-10" class="anchor" href="#the-repos-sxzz-recent-stared-random-10" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos sxzz recent stared (random 10)</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>STAREDDATE</th>
+<th>LAUGUAGE</th>
+<th>LATESTUPDATE</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/ExistentialAudio/BlackHole" rel="nofollow">BlackHole</a></td>
+<td>2022-08-05</td>
+<td>C</td>
+<td>2023-01-19</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/bytenode/bytenode" rel="nofollow">bytenode</a></td>
+<td>2022-09-24</td>
+<td>JavaScript</td>
+<td>2023-01-17</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/webfansplz/vtui-repl" rel="nofollow">vtui-repl</a></td>
+<td>2022-12-01</td>
+<td>Vue</td>
+<td>2023-01-12</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/g-plane/typed-query-selector" rel="nofollow">typed-query-selector</a></td>
+<td>2022-10-06</td>
+<td>TypeScript</td>
+<td>2023-01-16</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/HMUniversity/Colleges" rel="nofollow">Colleges</a></td>
+<td>2023-01-06</td>
+<td>md</td>
+<td>2023-01-09</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/rust-lang/rustlings" rel="nofollow">rustlings</a></td>
+<td>2022-09-29</td>
+<td>Rust</td>
+<td>2023-01-20</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/dessant/buster" rel="nofollow">buster</a></td>
+<td>2022-10-03</td>
+<td>JavaScript</td>
+<td>2023-01-20</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/element-plus/element-plus-interactive-docs" rel="nofollow">element-plus-interactive-docs</a></td>
+<td>2022-10-14</td>
+<td>Vue</td>
+<td>2023-01-09</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/gizmo-ds/udon.ts" rel="nofollow">udon.ts</a></td>
+<td>2022-11-20</td>
+<td>md</td>
+<td>2022-11-21</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/coderaiser/swc-to-babel" rel="nofollow">swc-to-babel</a></td>
+<td>2022-08-24</td>
+<td>JavaScript</td>
+<td>2022-10-28</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+</body>
+</html>
