@@ -54,6 +54,7 @@ func main() {
 	r.POST("/generate", func(c *gin.Context) {
 		needRefresh := false
 		userName, _ := c.GetPostForm("r")
+		userName = strings.TrimSpace(userName)
 		l := strings.Split(userName, "--")
 		if len(l) > 1 && l[1] == "refresh" {
 			needRefresh = true
