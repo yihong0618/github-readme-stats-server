@@ -1,8 +1,10 @@
 package github
 
 import (
+	"bytes"
 	"context"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"math/rand"
 	"os"
@@ -290,7 +292,7 @@ func makeStaredString(myStars []myStaredInfo, starNumber int, userName string) s
 	return myStaredTitle + myStaredString + "\n"
 }
 
-func GenerateNewFile(UserName string) {
+func GenerateNewFile(UserName string) []byte {
 	client := github.NewClient(nil)
 	if tok := os.Getenv("GITHUB_TOKEN"); tok != "" {
 		ts := oauth2.StaticTokenSource(&oauth2.Token{AccessToken: tok})
@@ -332,8 +334,14 @@ func GenerateNewFile(UserName string) {
 	result := github_flavored_markdown.Markdown([]byte(newContentString))
 	UserName = strings.ToLower(UserName)
 	outputFile, _ := os.Create("templates/" + UserName + ".html")
-	err = tmpl.Execute(outputFile, contextHTML{Title: UserName, Body: string(result)})
+	var tpl bytes.Buffer
+	err = tmpl.Execute(&tpl, contextHTML{Title: UserName, Body: string(result)})
 	if err != nil {
 		log.Fatal(err)
 	}
+	err = ioutil.WriteFile(outputFile.Name(), tpl.Bytes(), 0644)
+	if err != nil {
+		panic(err)
+	}
+	return tpl.Bytes()
 }

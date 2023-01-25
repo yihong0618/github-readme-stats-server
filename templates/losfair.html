@@ -1,0 +1,2444 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>losfair</title>
+    <style>
+      body {
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+.main-link {
+  text-decoration: none;
+  color: inherit;
+}
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.markdown-body a {
+  background-color: transparent;
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+.markdown-body * {
+  box-sizing: border-box;
+}
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h1 {
+  font-size: 30px;
+}
+.markdown-body h2 {
+  font-size: 21px;
+}
+.markdown-body blockquote {
+  margin: 0;
+}
+.markdown-body dd {
+  margin-left: 0;
+}
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h5 {
+  font-size: 1em;
+}
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-body li>p {
+  margin-top: 16px;
+}
+.markdown-body dl {
+  padding: 0;
+}
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+.markdown-body table th {
+  font-weight: bold;
+}
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.markdown-body pre {
+  word-wrap: normal;
+}
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+}
+    </style>
+  </head>
+<body>
+	<div class="container p-4">
+	<main>
+	<div class="heading text-center">
+		<h1 class="display-1">
+		<a
+			href="https://github.com/yihong0618/github-readme-stats-server"
+			class="main-link"
+			>GitHub README Stats</a
+		>
+		</h1>
+		<p class="lead">Generate GitHub User README Profile</p>
+	</div>
+	<hr />
+	<form action="/generate" method="post">
+		<div class="input-group mb-4">
+		<input
+			class="form-control form-control-lg"
+			type="text"
+			placeholder="GitHub username"
+			aria-label="Input GitHub username"
+			name="r"
+			id="r"
+		/>
+		<button class="btn btn-primary">GO!</button>
+		</div>
+	</form>
+	</div>
+	</main>
+  <div class="tips">
+    <h4>Tips</h4>
+    <ul>
+      <li>
+        Add query string <code>--refresh</code> to clear the caches
+      </li>
+    </ul>
+  </div>
+  </main>
+  <footer>
+  <h4>Credits</h4>
+  <ul>
+    <li>
+      <a href="https://github.com/frostming">frostming</a>'s
+      <a href="https://github.com/frostming/tokei-pie-cooker">tokei-pie-cooker</a> project
+    </li>
+  </ul>
+  </footer>
+	</div>
+  <article class="markdown-body">
+    <h2><a name="the-repos-losfair-created" class="anchor" href="#the-repos-losfair-created" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>The repos losfair created</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>START</th>
+<th>UPDATE</th>
+<th>LAUGUAGE</th>
+<th>STARS</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/losfair/blueboat" rel="nofollow">blueboat</a></td>
+<td>2021-01-01</td>
+<td>2023-01-23</td>
+<td>Rust</td>
+<td>1850</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/losfair/mvsqlite" rel="nofollow">mvsqlite</a></td>
+<td>2022-07-25</td>
+<td>2023-01-25</td>
+<td>Rust</td>
+<td>976</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/losfair/RefineDB" rel="nofollow">RefineDB</a></td>
+<td>2021-06-14</td>
+<td>2023-01-14</td>
+<td>Rust</td>
+<td>381</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/losfair/IceCore" rel="nofollow">IceCore</a></td>
+<td>2017-07-12</td>
+<td>2022-12-23</td>
+<td>Rust</td>
+<td>111</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/losfair/wasm-core" rel="nofollow">wasm-core</a></td>
+<td>2018-03-11</td>
+<td>2020-09-09</td>
+<td>Rust</td>
+<td>82</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/losfair/dlock" rel="nofollow">dlock</a></td>
+<td>2022-06-18</td>
+<td>2022-12-08</td>
+<td>TypeScript</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/losfair/rust-coroutines" rel="nofollow">rust-coroutines</a></td>
+<td>2018-02-18</td>
+<td>2022-10-26</td>
+<td>C</td>
+<td>48</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/losfair/Violet" rel="nofollow">Violet</a></td>
+<td>2020-09-06</td>
+<td>2022-12-21</td>
+<td>Haskell</td>
+<td>32</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/losfair/vmesh" rel="nofollow">vmesh</a></td>
+<td>2019-08-14</td>
+<td>2022-10-05</td>
+<td>Go</td>
+<td>29</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/losfair/AlphaBoard" rel="nofollow">AlphaBoard</a></td>
+<td>2016-10-15</td>
+<td>2022-10-11</td>
+<td>JavaScript</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/losfair/hexagon-e" rel="nofollow">hexagon-e</a></td>
+<td>2018-04-29</td>
+<td>2022-09-07</td>
+<td>Rust</td>
+<td>24</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/losfair/v8-serde" rel="nofollow">v8-serde</a></td>
+<td>2023-01-21</td>
+<td>2023-01-24</td>
+<td>TypeScript</td>
+<td>22</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/losfair/sqlite-cache" rel="nofollow">sqlite-cache</a></td>
+<td>2022-06-16</td>
+<td>2022-11-26</td>
+<td>Rust</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/losfair/FlatRv" rel="nofollow">FlatRv</a></td>
+<td>2020-01-08</td>
+<td>2022-12-16</td>
+<td>Rust</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/losfair/MagiCore" rel="nofollow">MagiCore</a></td>
+<td>2022-04-10</td>
+<td>2023-01-17</td>
+<td>Scala</td>
+<td>17</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://github.com/losfair/ice-node" rel="nofollow">ice-node</a></td>
+<td>2017-07-17</td>
+<td>2019-03-29</td>
+<td>C++</td>
+<td>16</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://github.com/losfair/AlphaTrans" rel="nofollow">AlphaTrans</a></td>
+<td>2016-07-01</td>
+<td>2021-06-06</td>
+<td>C++</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://github.com/losfair/rm-protection-c" rel="nofollow">rm-protection-c</a></td>
+<td>2017-02-05</td>
+<td>2020-03-30</td>
+<td>C</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://github.com/losfair/unproxy" rel="nofollow">unproxy</a></td>
+<td>2022-08-14</td>
+<td>2022-09-08</td>
+<td>Rust</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://github.com/losfair/minichat" rel="nofollow">minichat</a></td>
+<td>2022-07-16</td>
+<td>2022-08-03</td>
+<td>JavaScript</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://github.com/losfair/caddy-watch" rel="nofollow">caddy-watch</a></td>
+<td>2021-11-16</td>
+<td>2022-07-21</td>
+<td>Go</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://github.com/losfair/pbft-rs" rel="nofollow">pbft-rs</a></td>
+<td>2018-11-28</td>
+<td>2022-09-02</td>
+<td>Rust</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://github.com/losfair/lambda-box" rel="nofollow">lambda-box</a></td>
+<td>2021-01-11</td>
+<td>2022-10-22</td>
+<td>TypeScript</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://github.com/losfair/b6t" rel="nofollow">b6t</a></td>
+<td>2021-12-16</td>
+<td>2022-07-21</td>
+<td>Shell</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://github.com/losfair/kvm-sandbox" rel="nofollow">kvm-sandbox</a></td>
+<td>2018-12-08</td>
+<td>2020-04-27</td>
+<td>C++</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://github.com/losfair/wstunnel" rel="nofollow">wstunnel</a></td>
+<td>2020-02-23</td>
+<td>2022-01-04</td>
+<td>Rust</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://github.com/losfair/bsync" rel="nofollow">bsync</a></td>
+<td>2021-10-13</td>
+<td>2022-08-21</td>
+<td>Rust</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://github.com/losfair/notion-fetch" rel="nofollow">notion-fetch</a></td>
+<td>2022-07-21</td>
+<td>2023-01-06</td>
+<td>TypeScript</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://github.com/losfair/edp" rel="nofollow">edp</a></td>
+<td>2021-08-03</td>
+<td>2022-07-21</td>
+<td>Rust</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://github.com/losfair/blog" rel="nofollow">blog</a></td>
+<td>2022-07-17</td>
+<td>2023-01-17</td>
+<td>TypeScript</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://github.com/losfair/avalanche-demo" rel="nofollow">avalanche-demo</a></td>
+<td>2018-12-02</td>
+<td>2022-11-23</td>
+<td>TypeScript</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://github.com/losfair/FlatMk-v0" rel="nofollow">FlatMk-v0</a></td>
+<td>2019-11-30</td>
+<td>2021-06-01</td>
+<td>Rust</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://github.com/losfair/liquid-layout" rel="nofollow">liquid-layout</a></td>
+<td>2021-06-10</td>
+<td>2022-04-18</td>
+<td>Rust</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://github.com/losfair/metamachine" rel="nofollow">metamachine</a></td>
+<td>2019-12-02</td>
+<td>2022-09-16</td>
+<td>VHDL</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://github.com/losfair/fdb2kafka" rel="nofollow">fdb2kafka</a></td>
+<td>2022-06-11</td>
+<td>2022-07-21</td>
+<td>Go</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://github.com/losfair/elfpromote" rel="nofollow">elfpromote</a></td>
+<td>2022-07-16</td>
+<td>2022-07-21</td>
+<td>Rust</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://github.com/losfair/gkv" rel="nofollow">gkv</a></td>
+<td>2022-10-22</td>
+<td>2022-11-28</td>
+<td>Scala</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://github.com/losfair/hexagon" rel="nofollow">hexagon</a></td>
+<td>2018-01-07</td>
+<td>2021-08-25</td>
+<td>Rust</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://github.com/losfair/NextHDL" rel="nofollow">NextHDL</a></td>
+<td>2021-03-19</td>
+<td>2021-03-31</td>
+<td>Rust</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://github.com/losfair/blueboat-examples" rel="nofollow">blueboat-examples</a></td>
+<td>2021-11-18</td>
+<td>2022-07-25</td>
+<td>JavaScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>41</td>
+<td><a href="https://github.com/losfair/mips" rel="nofollow">mips</a></td>
+<td>2020-04-21</td>
+<td>2022-06-21</td>
+<td>Verilog</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>42</td>
+<td><a href="https://github.com/losfair/liblightning" rel="nofollow">liblightning</a></td>
+<td>2018-03-04</td>
+<td>2022-10-16</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>43</td>
+<td><a href="https://github.com/losfair/tsotest" rel="nofollow">tsotest</a></td>
+<td>2021-01-31</td>
+<td>2022-12-08</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>44</td>
+<td><a href="https://github.com/losfair/rCore-SoC-2020" rel="nofollow">rCore-SoC-2020</a></td>
+<td>2020-07-12</td>
+<td>2020-08-07</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>45</td>
+<td><a href="https://github.com/losfair/blueboat-mds" rel="nofollow">blueboat-mds</a></td>
+<td>2021-11-28</td>
+<td>2022-07-21</td>
+<td>JavaScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>46</td>
+<td><a href="https://github.com/losfair/smr" rel="nofollow">smr</a></td>
+<td>2021-10-26</td>
+<td>2022-07-21</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td><a href="https://github.com/losfair/jslinux-wstunnel" rel="nofollow">jslinux-wstunnel</a></td>
+<td>2020-02-23</td>
+<td>2022-02-22</td>
+<td>JavaScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td><a href="https://github.com/losfair/fediblog" rel="nofollow">fediblog</a></td>
+<td>2022-12-27</td>
+<td>2023-01-02</td>
+<td>TypeScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>49</td>
+<td><a href="https://github.com/losfair/luax" rel="nofollow">luax</a></td>
+<td>2018-02-09</td>
+<td>2021-08-25</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td><a href="https://github.com/losfair/bbcli" rel="nofollow">bbcli</a></td>
+<td>2021-10-02</td>
+<td>2022-07-21</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>51</td>
+<td><a href="https://github.com/losfair/bbcp" rel="nofollow">bbcp</a></td>
+<td>2021-10-02</td>
+<td>2022-07-21</td>
+<td>TypeScript</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://github.com/losfair/lazyproxy" rel="nofollow">lazyproxy</a></td>
+<td>2022-10-05</td>
+<td>2022-11-16</td>
+<td>Rust</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>53</td>
+<td><a href="https://github.com/losfair/node-multithread" rel="nofollow">node-multithread</a></td>
+<td>2017-01-04</td>
+<td>2018-11-16</td>
+<td>C++</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>54</td>
+<td><a href="https://github.com/losfair/awesome-blueboat" rel="nofollow">awesome-blueboat</a></td>
+<td>2021-11-27</td>
+<td>2022-07-21</td>
+<td>md</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>55</td>
+<td><a href="https://github.com/losfair/gluon" rel="nofollow">gluon</a></td>
+<td>2022-09-11</td>
+<td>2022-10-16</td>
+<td>TypeScript</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>56</td>
+<td><a href="https://github.com/losfair/OxygenMark" rel="nofollow">OxygenMark</a></td>
+<td>2016-11-23</td>
+<td>2017-10-24</td>
+<td>C++</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>57</td>
+<td><a href="https://github.com/losfair/particles-rs" rel="nofollow">particles-rs</a></td>
+<td>2018-01-03</td>
+<td>2020-03-21</td>
+<td>Rust</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>58</td>
+<td><a href="https://github.com/losfair/bluesched" rel="nofollow">bluesched</a></td>
+<td>2022-02-01</td>
+<td>2022-07-21</td>
+<td>Elixir</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>59</td>
+<td><a href="https://github.com/losfair/boat" rel="nofollow">boat</a></td>
+<td>2022-06-27</td>
+<td>2022-07-31</td>
+<td>Rust</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>60</td>
+<td><a href="https://github.com/losfair/ops" rel="nofollow">ops</a></td>
+<td>2021-09-25</td>
+<td>2022-07-21</td>
+<td>Shell</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>61</td>
+<td><a href="https://github.com/losfair/cloudkernel" rel="nofollow">cloudkernel</a></td>
+<td>2019-11-01</td>
+<td>2022-02-15</td>
+<td>C++</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>62</td>
+<td><a href="https://github.com/losfair/violet-cosim" rel="nofollow">violet-cosim</a></td>
+<td>2020-09-14</td>
+<td>2021-10-24</td>
+<td>Rust</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>63</td>
+<td><a href="https://github.com/losfair/naptd" rel="nofollow">naptd</a></td>
+<td>2019-09-11</td>
+<td>2020-08-11</td>
+<td>Rust</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>64</td>
+<td><a href="https://github.com/losfair/rvjit-aa64" rel="nofollow">rvjit-aa64</a></td>
+<td>2020-11-13</td>
+<td>2022-02-13</td>
+<td>Rust</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>65</td>
+<td><a href="https://github.com/losfair/DeepDark" rel="nofollow">DeepDark</a></td>
+<td>2017-10-04</td>
+<td>2019-08-25</td>
+<td>C++</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>66</td>
+<td><a href="https://github.com/losfair/Presenter.js" rel="nofollow">Presenter.js</a></td>
+<td>2021-05-15</td>
+<td>2022-07-21</td>
+<td>JavaScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>67</td>
+<td><a href="https://github.com/losfair/caddy-log-to-mysql" rel="nofollow">caddy-log-to-mysql</a></td>
+<td>2021-10-27</td>
+<td>2021-11-25</td>
+<td>Rust</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>68</td>
+<td><a href="https://github.com/losfair/caddy-log-kafka" rel="nofollow">caddy-log-kafka</a></td>
+<td>2021-11-03</td>
+<td>2022-07-21</td>
+<td>Go</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>69</td>
+<td><a href="https://github.com/losfair/jftp" rel="nofollow">jftp</a></td>
+<td>2021-09-25</td>
+<td>2022-04-09</td>
+<td>Rust</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>70</td>
+<td><a href="https://github.com/losfair/tunnelme" rel="nofollow">tunnelme</a></td>
+<td>2021-04-14</td>
+<td>2022-06-13</td>
+<td>Haskell</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>71</td>
+<td><a href="https://github.com/losfair/bfjit-osr" rel="nofollow">bfjit-osr</a></td>
+<td>2019-05-23</td>
+<td>2019-12-29</td>
+<td>Rust</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>72</td>
+<td><a href="https://github.com/losfair/mips-x" rel="nofollow">mips-x</a></td>
+<td>2020-05-22</td>
+<td>2020-07-07</td>
+<td>Verilog</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td><a href="https://github.com/losfair/notion-blueboat" rel="nofollow">notion-blueboat</a></td>
+<td>2021-12-20</td>
+<td>2022-07-21</td>
+<td>md</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>74</td>
+<td><a href="https://github.com/losfair/FutureCore-Terminal" rel="nofollow">FutureCore-Terminal</a></td>
+<td>2017-05-21</td>
+<td>2017-06-06</td>
+<td>C</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>75</td>
+<td><a href="https://github.com/losfair/wavebpf-hw" rel="nofollow">wavebpf-hw</a></td>
+<td>2021-12-04</td>
+<td>2022-07-21</td>
+<td>Haskell</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>76</td>
+<td><a href="https://github.com/losfair/virtual-dom-rs" rel="nofollow">virtual-dom-rs</a></td>
+<td>2017-12-04</td>
+<td>2021-08-09</td>
+<td>Rust</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>77</td>
+<td><a href="https://github.com/losfair/bdtts-go" rel="nofollow">bdtts-go</a></td>
+<td>2016-08-11</td>
+<td>2017-12-13</td>
+<td>Go</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>78</td>
+<td><a href="https://github.com/losfair/UniMessTunnel" rel="nofollow">UniMessTunnel</a></td>
+<td>2017-10-15</td>
+<td>2021-01-19</td>
+<td>Go</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>79</td>
+<td><a href="https://github.com/losfair/TextSharing" rel="nofollow">TextSharing</a></td>
+<td>2017-01-13</td>
+<td>2017-01-13</td>
+<td>md</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td><a href="https://github.com/losfair/blueanalytics" rel="nofollow">blueanalytics</a></td>
+<td>2021-10-28</td>
+<td>2022-07-21</td>
+<td>TypeScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>81</td>
+<td><a href="https://github.com/losfair/SharpIce" rel="nofollow">SharpIce</a></td>
+<td>2017-08-26</td>
+<td>2020-06-13</td>
+<td>C#</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td><a href="https://github.com/losfair/retls" rel="nofollow">retls</a></td>
+<td>2022-11-23</td>
+<td>2022-11-23</td>
+<td>Rust</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>83</td>
+<td><a href="https://github.com/losfair/pyice_base" rel="nofollow">pyice_base</a></td>
+<td>2017-08-08</td>
+<td>2017-09-10</td>
+<td>C++</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>84</td>
+<td><a href="https://github.com/losfair/pl0-jit" rel="nofollow">pl0-jit</a></td>
+<td>2020-11-22</td>
+<td>2021-08-25</td>
+<td>Rust</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>85</td>
+<td><a href="https://github.com/losfair/losfair" rel="nofollow">losfair</a></td>
+<td>2020-11-27</td>
+<td>2022-07-21</td>
+<td>md</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>86</td>
+<td><a href="https://github.com/losfair/dockerfiles" rel="nofollow">dockerfiles</a></td>
+<td>2021-11-20</td>
+<td>2022-07-21</td>
+<td>Dockerfile</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>87</td>
+<td><a href="https://github.com/losfair/OxygenMark-PageEngine" rel="nofollow">OxygenMark-PageEngine</a></td>
+<td>2016-12-03</td>
+<td>2016-12-25</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td><a href="https://github.com/losfair/orange-rs" rel="nofollow">orange-rs</a></td>
+<td>2020-09-06</td>
+<td>2021-02-23</td>
+<td>Rust</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td><a href="https://github.com/losfair/CloudEdu" rel="nofollow">CloudEdu</a></td>
+<td>2016-11-18</td>
+<td>2022-12-18</td>
+<td>JavaScript</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td><a href="https://github.com/losfair/html2md" rel="nofollow">html2md</a></td>
+<td>2021-04-06</td>
+<td>2022-07-22</td>
+<td>Rust</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td><a href="https://github.com/losfair/magicore-aas" rel="nofollow">magicore-aas</a></td>
+<td>2022-05-01</td>
+<td>2022-07-21</td>
+<td>Rust</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>92</td>
+<td><a href="https://github.com/losfair/IXDS" rel="nofollow">IXDS</a></td>
+<td>2017-07-11</td>
+<td>2017-07-11</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td><a href="https://github.com/losfair/hexagon-bridge" rel="nofollow">hexagon-bridge</a></td>
+<td>2018-01-21</td>
+<td>2018-01-21</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>94</td>
+<td><a href="https://github.com/losfair/hexagon-api-c" rel="nofollow">hexagon-api-c</a></td>
+<td>2018-02-01</td>
+<td>2018-02-01</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>95</td>
+<td><a href="https://github.com/losfair/GoExceptions" rel="nofollow">GoExceptions</a></td>
+<td>2017-03-03</td>
+<td>2017-03-03</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>96</td>
+<td><a href="https://github.com/losfair/mnet-config" rel="nofollow">mnet-config</a></td>
+<td>2018-11-13</td>
+<td>2018-11-13</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td><a href="https://github.com/losfair/MPlatform_InitConfig_Android" rel="nofollow">MPlatform_InitConfig_Android</a></td>
+<td>2015-01-17</td>
+<td>2015-01-17</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td><a href="https://github.com/losfair/git-deployer" rel="nofollow">git-deployer</a></td>
+<td>2018-10-21</td>
+<td>2018-10-21</td>
+<td>Haskell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td><a href="https://github.com/losfair/mvsqlite-shell" rel="nofollow">mvsqlite-shell</a></td>
+<td>2022-08-06</td>
+<td>2022-08-06</td>
+<td>Dockerfile</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td><a href="https://github.com/losfair/generic-fdb" rel="nofollow">generic-fdb</a></td>
+<td>2022-11-19</td>
+<td>2022-11-19</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td><a href="https://github.com/losfair/gccgo-scripts" rel="nofollow">gccgo-scripts</a></td>
+<td>2016-08-21</td>
+<td>2016-08-21</td>
+<td>Shell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td><a href="https://github.com/losfair/nnet-rs" rel="nofollow">nnet-rs</a></td>
+<td>2017-12-13</td>
+<td>2017-12-13</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td><a href="https://github.com/losfair/hexagon-target-wasm" rel="nofollow">hexagon-target-wasm</a></td>
+<td>2018-01-21</td>
+<td>2018-01-21</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td><a href="https://github.com/losfair/HydroCloud" rel="nofollow">HydroCloud</a></td>
+<td>2016-08-30</td>
+<td>2016-08-30</td>
+<td>C#</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td><a href="https://github.com/losfair/Finow_OpenSource" rel="nofollow">Finow_OpenSource</a></td>
+<td>2013-12-29</td>
+<td>2013-12-29</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td><a href="https://github.com/losfair/odsh" rel="nofollow">odsh</a></td>
+<td>2017-10-29</td>
+<td>2017-10-29</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td><a href="https://github.com/losfair/om.js" rel="nofollow">om.js</a></td>
+<td>2017-04-02</td>
+<td>2017-04-02</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td><a href="https://github.com/losfair/OneIdentity_docs" rel="nofollow">OneIdentity_docs</a></td>
+<td>2017-02-17</td>
+<td>2017-06-14</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td><a href="https://github.com/losfair/OneShell" rel="nofollow">OneShell</a></td>
+<td>2017-10-26</td>
+<td>2017-10-26</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td><a href="https://github.com/losfair/luax-bin" rel="nofollow">luax-bin</a></td>
+<td>2018-02-12</td>
+<td>2018-02-12</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td><a href="https://github.com/losfair/hvimage" rel="nofollow">hvimage</a></td>
+<td>2020-12-10</td>
+<td>2020-12-11</td>
+<td>Shell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>112</td>
+<td><a href="https://github.com/losfair/OxygenDecl" rel="nofollow">OxygenDecl</a></td>
+<td>2017-04-18</td>
+<td>2017-04-22</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td><a href="https://github.com/losfair/OxygenDecl-Express" rel="nofollow">OxygenDecl-Express</a></td>
+<td>2017-04-22</td>
+<td>2017-04-22</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td><a href="https://github.com/losfair/OxygenFlow" rel="nofollow">OxygenFlow</a></td>
+<td>2017-05-18</td>
+<td>2017-05-18</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>115</td>
+<td><a href="https://github.com/losfair/express-request-inspection" rel="nofollow">express-request-inspection</a></td>
+<td>2017-01-03</td>
+<td>2017-01-03</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>116</td>
+<td><a href="https://github.com/losfair/losfair.github.io" rel="nofollow">losfair.github.io</a></td>
+<td>2018-05-29</td>
+<td>2019-12-08</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>117</td>
+<td><a href="https://github.com/losfair/a2n" rel="nofollow">a2n</a></td>
+<td>2018-11-12</td>
+<td>2018-11-13</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>118</td>
+<td><a href="https://github.com/losfair/losfair.github.com" rel="nofollow">losfair.github.com</a></td>
+<td>2015-04-26</td>
+<td>2015-04-26</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td><a href="https://github.com/losfair/HydroCloud_Services" rel="nofollow">HydroCloud_Services</a></td>
+<td>2016-08-03</td>
+<td>2016-08-03</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td><a href="https://github.com/losfair/prepay-rfid-payment" rel="nofollow">prepay-rfid-payment</a></td>
+<td>2016-11-18</td>
+<td>2017-02-07</td>
+<td>PHP</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td><a href="https://github.com/losfair/fdbbench" rel="nofollow">fdbbench</a></td>
+<td>2021-08-05</td>
+<td>2021-08-05</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td><a href="https://github.com/losfair/pyice" rel="nofollow">pyice</a></td>
+<td>2017-07-15</td>
+<td>2017-07-15</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>123</td>
+<td><a href="https://github.com/losfair/ice-api-v4" rel="nofollow">ice-api-v4</a></td>
+<td>2017-09-16</td>
+<td>2017-09-16</td>
+<td>C</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td><a href="https://github.com/losfair/cervus_bridge" rel="nofollow">cervus_bridge</a></td>
+<td>2017-09-22</td>
+<td>2017-09-22</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td><a href="https://github.com/losfair/readahead" rel="nofollow">readahead</a></td>
+<td>2022-08-20</td>
+<td>2022-12-04</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td><a href="https://github.com/losfair/cervus-cpp" rel="nofollow">cervus-cpp</a></td>
+<td>2017-09-22</td>
+<td>2017-09-22</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td><a href="https://github.com/losfair/retcp" rel="nofollow">retcp</a></td>
+<td>2022-11-24</td>
+<td>2022-11-24</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>128</td>
+<td><a href="https://github.com/losfair/ice-cpp" rel="nofollow">ice-cpp</a></td>
+<td>2017-08-02</td>
+<td>2017-08-02</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>129</td>
+<td><a href="https://github.com/losfair/CarbonVideo-Uploader" rel="nofollow">CarbonVideo-Uploader</a></td>
+<td>2017-01-11</td>
+<td>2017-01-11</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>130</td>
+<td><a href="https://github.com/losfair/rmrlsvc" rel="nofollow">rmrlsvc</a></td>
+<td>2021-10-20</td>
+<td>2021-10-20</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td><a href="https://github.com/losfair/CarbonVideo" rel="nofollow">CarbonVideo</a></td>
+<td>2016-12-27</td>
+<td>2017-01-29</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>132</td>
+<td><a href="https://github.com/losfair/caddy-knock" rel="nofollow">caddy-knock</a></td>
+<td>2021-09-25</td>
+<td>2021-09-25</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>133</td>
+<td><a href="https://github.com/losfair/scsapi-go" rel="nofollow">scsapi-go</a></td>
+<td>2016-08-22</td>
+<td>2016-08-22</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>134</td>
+<td><a href="https://github.com/losfair/ServiceIdentityProvider" rel="nofollow">ServiceIdentityProvider</a></td>
+<td>2017-10-21</td>
+<td>2017-10-21</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td><a href="https://github.com/losfair/ServiceInterface" rel="nofollow">ServiceInterface</a></td>
+<td>2017-01-22</td>
+<td>2017-01-22</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>136</td>
+<td><a href="https://github.com/losfair/ice-node-perf-tests" rel="nofollow">ice-node-perf-tests</a></td>
+<td>2017-07-20</td>
+<td>2017-07-20</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td><a href="https://github.com/losfair/shellkey-authd" rel="nofollow">shellkey-authd</a></td>
+<td>2021-04-18</td>
+<td>2021-04-21</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td><a href="https://github.com/losfair/botly-core" rel="nofollow">botly-core</a></td>
+<td>2017-07-24</td>
+<td>2017-07-24</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td><a href="https://github.com/losfair/ice-python" rel="nofollow">ice-python</a></td>
+<td>2017-09-25</td>
+<td>2017-09-25</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td><a href="https://github.com/losfair/taah" rel="nofollow">taah</a></td>
+<td>2021-04-11</td>
+<td>2021-05-23</td>
+<td>Haskell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td><a href="https://github.com/losfair/knocksvc" rel="nofollow">knocksvc</a></td>
+<td>2021-09-25</td>
+<td>2021-10-10</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td><a href="https://github.com/losfair/toy-jit" rel="nofollow">toy-jit</a></td>
+<td>2018-04-28</td>
+<td>2018-04-28</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td><a href="https://github.com/losfair/TrustedDeployment" rel="nofollow">TrustedDeployment</a></td>
+<td>2016-12-04</td>
+<td>2016-12-04</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>144</td>
+<td><a href="https://github.com/losfair/blogic-synth" rel="nofollow">blogic-synth</a></td>
+<td>2020-10-27</td>
+<td>2020-10-27</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td><a href="https://github.com/losfair/BiliBiliAPI" rel="nofollow">BiliBiliAPI</a></td>
+<td>2017-09-03</td>
+<td>2019-02-26</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td><a href="https://github.com/losfair/uart-transmitter.a2os" rel="nofollow">uart-transmitter.a2os</a></td>
+<td>2020-05-17</td>
+<td>2020-05-17</td>
+<td>Haskell</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td><a href="https://github.com/losfair/UniMess" rel="nofollow">UniMess</a></td>
+<td>2017-10-15</td>
+<td>2017-10-15</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td><a href="https://github.com/losfair/jsMinifier" rel="nofollow">jsMinifier</a></td>
+<td>2016-08-21</td>
+<td>2016-08-21</td>
+<td>C++</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td><a href="https://github.com/losfair/ice-server-status" rel="nofollow">ice-server-status</a></td>
+<td>2017-07-23</td>
+<td>2017-07-23</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td><a href="https://github.com/losfair/urlencoder-go" rel="nofollow">urlencoder-go</a></td>
+<td>2016-08-20</td>
+<td>2016-08-20</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td><a href="https://github.com/losfair/bdsr-go" rel="nofollow">bdsr-go</a></td>
+<td>2016-08-11</td>
+<td>2016-08-11</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td><a href="https://github.com/losfair/bdoauth-go" rel="nofollow">bdoauth-go</a></td>
+<td>2016-08-11</td>
+<td>2016-08-11</td>
+<td>Go</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td><a href="https://github.com/losfair/banXiaocao" rel="nofollow">banXiaocao</a></td>
+<td>2016-08-14</td>
+<td>2016-08-14</td>
+<td>C</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td><a href="https://github.com/losfair/ifxor-images" rel="nofollow">ifxor-images</a></td>
+<td>2015-02-07</td>
+<td>2015-02-07</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td><a href="https://github.com/losfair/AuroraLearning" rel="nofollow">AuroraLearning</a></td>
+<td>2016-09-06</td>
+<td>2016-09-06</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td><a href="https://github.com/losfair/waks" rel="nofollow">waks</a></td>
+<td>2018-03-16</td>
+<td>2018-03-16</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td><a href="https://github.com/losfair/AsyncSpider" rel="nofollow">AsyncSpider</a></td>
+<td>2017-12-03</td>
+<td>2018-02-07</td>
+<td>Python</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td><a href="https://github.com/losfair/ixPaymentsAPI" rel="nofollow">ixPaymentsAPI</a></td>
+<td>2016-04-17</td>
+<td>2016-04-17</td>
+<td>PHP</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td><a href="https://github.com/losfair/web-graphics" rel="nofollow">web-graphics</a></td>
+<td>2022-11-14</td>
+<td>2022-11-14</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td><a href="https://github.com/losfair/worker-static-site" rel="nofollow">worker-static-site</a></td>
+<td>2021-01-08</td>
+<td>2021-01-08</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>161</td>
+<td><a href="https://github.com/losfair/wpblsync" rel="nofollow">wpblsync</a></td>
+<td>2021-09-22</td>
+<td>2021-09-22</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>162</td>
+<td><a href="https://github.com/losfair/android_kernel_sony_u8500_3_4" rel="nofollow">android_kernel_sony_u8500_3_4</a></td>
+<td>2014-09-27</td>
+<td>2014-09-27</td>
+<td>C</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>163</td>
+<td><a href="https://github.com/losfair/wstunnel-js" rel="nofollow">wstunnel-js</a></td>
+<td>2020-02-29</td>
+<td>2020-03-02</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>164</td>
+<td><a href="https://github.com/losfair/x-lang" rel="nofollow">x-lang</a></td>
+<td>2018-11-19</td>
+<td>2019-02-03</td>
+<td>Rust</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>165</td>
+<td><a href="https://github.com/losfair/zCore-seL4" rel="nofollow">zCore-seL4</a></td>
+<td>2020-08-05</td>
+<td>2020-08-15</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>166</td>
+<td><a href="https://github.com/losfair/zhixue-frontend" rel="nofollow">zhixue-frontend</a></td>
+<td>2016-02-28</td>
+<td>2016-02-28</td>
+<td>HTML</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td><a href="https://github.com/losfair/zhixue-vip" rel="nofollow">zhixue-vip</a></td>
+<td>2016-01-30</td>
+<td>2016-01-30</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3985</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-losfair-contributed-to" class="anchor" href="#the-repos-losfair-contributed-to" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos losfair contributed to</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>FIRSTDATE</th>
+<th>LASTEDATE</th>
+<th>LANGUAGE</th>
+<th>PRCOUNT</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/wasmerio/wasmer" rel="nofollow">wasmer</a></td>
+<td>2018-11-24</td>
+<td>2020-08-14</td>
+<td>Rust</td>
+<td><a href="https://github.com/wasmerio/wasmer/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">48</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/perlin-network/noise" rel="nofollow">noise</a></td>
+<td>2018-06-17</td>
+<td>2019-03-20</td>
+<td>Go</td>
+<td><a href="https://github.com/perlin-network/noise/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">30</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/perlin-network/wavelet" rel="nofollow">wavelet</a></td>
+<td>2018-09-30</td>
+<td>2019-08-28</td>
+<td>Go</td>
+<td><a href="https://github.com/perlin-network/wavelet/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">20</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/perlin-network/life" rel="nofollow">life</a></td>
+<td>2018-07-29</td>
+<td>2019-07-23</td>
+<td>Go</td>
+<td><a href="https://github.com/perlin-network/life/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">6</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/denoland/rusty_v8" rel="nofollow">rusty_v8</a></td>
+<td>2021-01-08</td>
+<td>2021-03-05</td>
+<td>Rust</td>
+<td><a href="https://github.com/denoland/rusty_v8/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">5</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/perlin-network/smart-contract-rs" rel="nofollow">smart-contract-rs</a></td>
+<td>2018-10-05</td>
+<td>2019-07-19</td>
+<td>Rust</td>
+<td><a href="https://github.com/perlin-network/smart-contract-rs/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">4</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/djyde/cusdis" rel="nofollow">cusdis</a></td>
+<td>2021-10-22</td>
+<td>2021-11-21</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/djyde/cusdis/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">4</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/zadam/trilium" rel="nofollow">trilium</a></td>
+<td>2022-08-01</td>
+<td>2022-08-23</td>
+<td>JavaScript</td>
+<td><a href="https://github.com/zadam/trilium/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/vercel/next.js" rel="nofollow">next.js</a></td>
+<td>2021-11-15</td>
+<td>2022-03-02</td>
+<td>JavaScript</td>
+<td><a href="https://github.com/vercel/next.js/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/NUAA-Open-Source/BlogRoll" rel="nofollow">BlogRoll</a></td>
+<td>2019-01-15</td>
+<td>2020-03-13</td>
+<td>md</td>
+<td><a href="https://github.com/NUAA-Open-Source/BlogRoll/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/go-interpreter/wagon" rel="nofollow">wagon</a></td>
+<td>2018-07-27</td>
+<td>2018-07-27</td>
+<td>Go</td>
+<td><a href="https://github.com/go-interpreter/wagon/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/wasmerio/kernel-wasm" rel="nofollow">kernel-wasm</a></td>
+<td>2020-01-31</td>
+<td>2020-01-31</td>
+<td>C</td>
+<td><a href="https://github.com/wasmerio/kernel-wasm/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/SpinalHDL/VexRiscv" rel="nofollow">VexRiscv</a></td>
+<td>2020-12-15</td>
+<td>2020-12-15</td>
+<td>Assembly</td>
+<td><a href="https://github.com/SpinalHDL/VexRiscv/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/artpi/roam-research-private-api" rel="nofollow">roam-research-private-api</a></td>
+<td>2023-01-08</td>
+<td>2023-01-08</td>
+<td>JavaScript</td>
+<td><a href="https://github.com/artpi/roam-research-private-api/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/perlin-network/smart-contract-as" rel="nofollow">smart-contract-as</a></td>
+<td>2019-08-01</td>
+<td>2019-08-01</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/perlin-network/smart-contract-as/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://github.com/sile/eetf" rel="nofollow">eetf</a></td>
+<td>2021-08-04</td>
+<td>2021-08-04</td>
+<td>Rust</td>
+<td><a href="https://github.com/sile/eetf/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://github.com/stephank/rvsim" rel="nofollow">rvsim</a></td>
+<td>2021-03-12</td>
+<td>2021-03-12</td>
+<td>Rust</td>
+<td><a href="https://github.com/stephank/rvsim/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://github.com/swc-project/swc" rel="nofollow">swc</a></td>
+<td>2021-09-18</td>
+<td>2021-09-18</td>
+<td>Rust</td>
+<td><a href="https://github.com/swc-project/swc/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://github.com/rcore-os/blog" rel="nofollow">blog</a></td>
+<td>2020-07-25</td>
+<td>2020-07-25</td>
+<td>Stylus</td>
+<td><a href="https://github.com/rcore-os/blog/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://github.com/rust-lang/backtrace-rs" rel="nofollow">backtrace-rs</a></td>
+<td>2020-07-06</td>
+<td>2020-07-06</td>
+<td>Rust</td>
+<td><a href="https://github.com/rust-lang/backtrace-rs/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://github.com/apple/foundationdb" rel="nofollow">foundationdb</a></td>
+<td>2022-10-30</td>
+<td>2022-10-30</td>
+<td>C++</td>
+<td><a href="https://github.com/apple/foundationdb/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://github.com/Nugine/OI-Problems" rel="nofollow">OI-Problems</a></td>
+<td>2017-07-15</td>
+<td>2017-07-15</td>
+<td>C++</td>
+<td><a href="https://github.com/Nugine/OI-Problems/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://github.com/ekzhang/rustpad" rel="nofollow">rustpad</a></td>
+<td>2022-10-01</td>
+<td>2022-10-01</td>
+<td>Rust</td>
+<td><a href="https://github.com/ekzhang/rustpad/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://github.com/pingcap/go-ycsb" rel="nofollow">go-ycsb</a></td>
+<td>2022-08-24</td>
+<td>2022-08-24</td>
+<td>Go</td>
+<td><a href="https://github.com/pingcap/go-ycsb/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://github.com/rcore-os/rCore-Tutorial" rel="nofollow">rCore-Tutorial</a></td>
+<td>2020-07-25</td>
+<td>2020-07-25</td>
+<td>Rust</td>
+<td><a href="https://github.com/rcore-os/rCore-Tutorial/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://github.com/Rahix/eagre-asn1" rel="nofollow">eagre-asn1</a></td>
+<td>2021-01-26</td>
+<td>2021-01-26</td>
+<td>Rust</td>
+<td><a href="https://github.com/Rahix/eagre-asn1/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://github.com/cloudflare/wrangler" rel="nofollow">wrangler</a></td>
+<td>2021-03-08</td>
+<td>2021-03-08</td>
+<td>Rust</td>
+<td><a href="https://github.com/cloudflare/wrangler/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://github.com/go-interpreter/license" rel="nofollow">license</a></td>
+<td>2018-07-28</td>
+<td>2018-07-28</td>
+<td>md</td>
+<td><a href="https://github.com/go-interpreter/license/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://github.com/bytecodealliance/target-lexicon" rel="nofollow">target-lexicon</a></td>
+<td>2018-06-03</td>
+<td>2018-06-03</td>
+<td>Rust</td>
+<td><a href="https://github.com/bytecodealliance/target-lexicon/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://github.com/benbjohnson/postlite" rel="nofollow">postlite</a></td>
+<td>2022-08-14</td>
+<td>2022-08-14</td>
+<td>Go</td>
+<td><a href="https://github.com/benbjohnson/postlite/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://github.com/SpinalHDL/SpinalHDL" rel="nofollow">SpinalHDL</a></td>
+<td>2022-04-03</td>
+<td>2022-04-03</td>
+<td>Scala</td>
+<td><a href="https://github.com/SpinalHDL/SpinalHDL/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://github.com/swc-project/plugins" rel="nofollow">plugins</a></td>
+<td>2021-12-09</td>
+<td>2021-12-09</td>
+<td>Rust</td>
+<td><a href="https://github.com/swc-project/plugins/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://github.com/dop251/goja" rel="nofollow">goja</a></td>
+<td>2021-12-01</td>
+<td>2021-12-01</td>
+<td>Go</td>
+<td><a href="https://github.com/dop251/goja/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://github.com/prisma/quaint" rel="nofollow">quaint</a></td>
+<td>2022-08-11</td>
+<td>2022-08-11</td>
+<td>Rust</td>
+<td><a href="https://github.com/prisma/quaint/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://github.com/Brooooooklyn/jsc-rs" rel="nofollow">jsc-rs</a></td>
+<td>2022-07-27</td>
+<td>2022-07-27</td>
+<td>Rust</td>
+<td><a href="https://github.com/Brooooooklyn/jsc-rs/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://github.com/paritytech/parity-wasm" rel="nofollow">parity-wasm</a></td>
+<td>2021-02-09</td>
+<td>2021-02-09</td>
+<td>Rust</td>
+<td><a href="https://github.com/paritytech/parity-wasm/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://github.com/copy/v86" rel="nofollow">v86</a></td>
+<td>2021-05-26</td>
+<td>2021-05-26</td>
+<td>Rust</td>
+<td><a href="https://github.com/copy/v86/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://github.com/skywind3000/kcp" rel="nofollow">kcp</a></td>
+<td>2017-08-19</td>
+<td>2017-08-19</td>
+<td>C</td>
+<td><a href="https://github.com/skywind3000/kcp/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://github.com/rcore-os/zCore" rel="nofollow">zCore</a></td>
+<td>2020-08-06</td>
+<td>2020-08-06</td>
+<td>Rust</td>
+<td><a href="https://github.com/rcore-os/zCore/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://github.com/perlin-network/wavelet-client-js" rel="nofollow">wavelet-client-js</a></td>
+<td>2019-08-28</td>
+<td>2019-08-28</td>
+<td>JavaScript</td>
+<td><a href="https://github.com/perlin-network/wavelet-client-js/pulls?q=is%3Apr+author%3Alosfair" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>158</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-losfair-recent-stared-random-10" class="anchor" href="#the-repos-losfair-recent-stared-random-10" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos losfair recent stared (random 10)</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>STAREDDATE</th>
+<th>LAUGUAGE</th>
+<th>LATESTUPDATE</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/openai/whisper" rel="nofollow">whisper</a></td>
+<td>2022-09-22</td>
+<td>Jupyter Notebook</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/vectordotdev/vector" rel="nofollow">vector</a></td>
+<td>2022-12-26</td>
+<td>Rust</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/jswrenn/deflect" rel="nofollow">deflect</a></td>
+<td>2022-12-17</td>
+<td>Rust</td>
+<td>2023-01-24</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/igrigorik/gharchive.org" rel="nofollow">gharchive.org</a></td>
+<td>2023-01-02</td>
+<td>Ruby</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/gogs/gogs" rel="nofollow">gogs</a></td>
+<td>2022-09-17</td>
+<td>Go</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/maxpert/marmot" rel="nofollow">marmot</a></td>
+<td>2022-09-17</td>
+<td>Go</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/ekzhang/rustpad" rel="nofollow">rustpad</a></td>
+<td>2022-09-22</td>
+<td>Rust</td>
+<td>2023-01-21</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/divamgupta/diffusionbee-stable-diffusion-ui" rel="nofollow">diffusionbee-stable-diffusion-ui</a></td>
+<td>2022-09-13</td>
+<td>JavaScript</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/cnlohr/mini-rv32ima" rel="nofollow">mini-rv32ima</a></td>
+<td>2022-12-06</td>
+<td>C</td>
+<td>2023-01-23</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/cloudflare/wildebeest" rel="nofollow">wildebeest</a></td>
+<td>2023-01-13</td>
+<td>TypeScript</td>
+<td>2023-01-25</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+</body>
+</html>

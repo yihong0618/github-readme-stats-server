@@ -66,11 +66,12 @@ func main() {
 			userName = strings.ToLower(userName)
 			c.HTML(http.StatusOK, userName+".html", nil)
 		} else {
-			github.GenerateNewFile(userName)
+			result := github.GenerateNewFile(userName)
 			// warit for a while to make sure the file is generated
 			time.Sleep(time.Second * 2)
 			userName = strings.ToLower(userName)
-			c.HTML(http.StatusOK, userName+".html", nil)
+			// c.HTML(http.StatusOK, userName+".html", nil)
+			c.Data(http.StatusOK, "text/html; charset=utf-8", result)
 		}
 	})
 	r.Run()
