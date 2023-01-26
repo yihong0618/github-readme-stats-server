@@ -1,0 +1,905 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>runjuu</title>
+    <style>
+      body {
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+.main-link {
+  text-decoration: none;
+  color: inherit;
+}
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.markdown-body a {
+  background-color: transparent;
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+.markdown-body * {
+  box-sizing: border-box;
+}
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h1 {
+  font-size: 30px;
+}
+.markdown-body h2 {
+  font-size: 21px;
+}
+.markdown-body blockquote {
+  margin: 0;
+}
+.markdown-body dd {
+  margin-left: 0;
+}
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+.markdown-body h5 {
+  font-size: 1em;
+}
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-body li>p {
+  margin-top: 16px;
+}
+.markdown-body dl {
+  padding: 0;
+}
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+.markdown-body table th {
+  font-weight: bold;
+}
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.markdown-body pre {
+  word-wrap: normal;
+}
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+}
+    </style>
+  </head>
+<body>
+	<div class="container p-4">
+	<main>
+	<div class="heading text-center">
+		<h1 class="display-1">
+		<a
+			href="https://github.com/yihong0618/github-readme-stats-server"
+			class="main-link"
+			>GitHub README Stats</a
+		>
+		</h1>
+		<p class="lead">Generate GitHub User README Profile</p>
+	</div>
+	<hr />
+	<form action="/generate" method="post">
+		<div class="input-group mb-4">
+		<input
+			class="form-control form-control-lg"
+			type="text"
+			placeholder="GitHub username"
+			aria-label="Input GitHub username"
+			name="r"
+			id="r"
+		/>
+		<button class="btn btn-primary">GO!</button>
+		</div>
+	</form>
+	</div>
+	</main>
+  <div class="tips">
+    <h4>Tips</h4>
+    <ul>
+      <li>
+        Add query string <code>--refresh</code> to clear the caches
+      </li>
+    </ul>
+  </div>
+  </main>
+  <footer>
+  <h4>Credits</h4>
+  <ul>
+    <li>
+      <a href="https://github.com/frostming">frostming</a>'s
+      <a href="https://github.com/frostming/tokei-pie-cooker">tokei-pie-cooker</a> project
+    </li>
+  </ul>
+  </footer>
+	</div>
+  <article class="markdown-body">
+    <h2><a name="the-repos-runjuu-created" class="anchor" href="#the-repos-runjuu-created" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>The repos runjuu created</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>START</th>
+<th>UPDATE</th>
+<th>LAUGUAGE</th>
+<th>STARS</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/runjuu/html-inline-css-webpack-plugin" rel="nofollow">html-inline-css-webpack-plugin</a></td>
+<td>2018-06-07</td>
+<td>2022-12-14</td>
+<td>TypeScript</td>
+<td>73</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/runjuu/page2image" rel="nofollow">page2image</a></td>
+<td>2017-08-24</td>
+<td>2023-01-05</td>
+<td>JavaScript</td>
+<td>66</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/runjuu/SongLink" rel="nofollow">SongLink</a></td>
+<td>2018-04-14</td>
+<td>2022-12-09</td>
+<td>md</td>
+<td>54</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/runjuu/mst-effect" rel="nofollow">mst-effect</a></td>
+<td>2020-07-19</td>
+<td>2023-01-13</td>
+<td>TypeScript</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/runjuu/react-waterfall-calendar" rel="nofollow">react-waterfall-calendar</a></td>
+<td>2016-10-27</td>
+<td>2019-09-14</td>
+<td>JavaScript</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/runjuu/zipkin-instrumentation-miniapp-request" rel="nofollow">zipkin-instrumentation-miniapp-request</a></td>
+<td>2018-01-25</td>
+<td>2020-05-23</td>
+<td>JavaScript</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/runjuu/column-resizer" rel="nofollow">column-resizer</a></td>
+<td>2022-11-13</td>
+<td>2023-01-07</td>
+<td>TypeScript</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/runjuu/react-native-elastic-swipe" rel="nofollow">react-native-elastic-swipe</a></td>
+<td>2018-06-03</td>
+<td>2020-05-01</td>
+<td>JavaScript</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/runjuu/PhotoFrames" rel="nofollow">PhotoFrames</a></td>
+<td>2017-04-01</td>
+<td>2018-10-23</td>
+<td>JavaScript</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/runjuu/Runjuu" rel="nofollow">Runjuu</a></td>
+<td>2021-03-03</td>
+<td>2021-03-08</td>
+<td>md</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/runjuu/jetbrains-settings" rel="nofollow">jetbrains-settings</a></td>
+<td>2018-03-17</td>
+<td>2019-05-28</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/runjuu/Rolling-Eyes" rel="nofollow">Rolling-Eyes</a></td>
+<td>2017-08-02</td>
+<td>2017-08-02</td>
+<td>md</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/runjuu/func-pool" rel="nofollow">func-pool</a></td>
+<td>2017-08-06</td>
+<td>2018-11-19</td>
+<td>JavaScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/runjuu/mst-effect-doc" rel="nofollow">mst-effect-doc</a></td>
+<td>2021-03-28</td>
+<td>2021-03-28</td>
+<td>TypeScript</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>241</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-runjuu-contributed-to" class="anchor" href="#the-repos-runjuu-contributed-to" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos runjuu contributed to</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>FIRSTDATE</th>
+<th>LASTEDATE</th>
+<th>LANGUAGE</th>
+<th>PRCOUNT</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/Crossbell-Box/crossbell.io" rel="nofollow">crossbell.io</a></td>
+<td>2022-09-06</td>
+<td>2023-01-18</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/Crossbell-Box/crossbell.io/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">50</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/Homebrew/homebrew-cask" rel="nofollow">homebrew-cask</a></td>
+<td>2022-05-30</td>
+<td>2022-12-12</td>
+<td>Ruby</td>
+<td><a href="https://github.com/Homebrew/homebrew-cask/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">13</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/LeetCode-OpenSource/react-simple-resizer" rel="nofollow">react-simple-resizer</a></td>
+<td>2018-12-02</td>
+<td>2018-12-06</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/react-simple-resizer/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/Brooooooklyn/redux-epics-decorator" rel="nofollow">redux-epics-decorator</a></td>
+<td>2019-03-04</td>
+<td>2019-03-05</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/Brooooooklyn/redux-epics-decorator/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/Crossbell-Box/xLog" rel="nofollow">xLog</a></td>
+<td>2022-09-06</td>
+<td>2023-01-19</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/Crossbell-Box/xLog/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">3</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/acgotaku/BaiduExporter" rel="nofollow">BaiduExporter</a></td>
+<td>2017-08-11</td>
+<td>2017-08-18</td>
+<td>md</td>
+<td><a href="https://github.com/acgotaku/BaiduExporter/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/LeetCode-OpenSource/ayanami" rel="nofollow">ayanami</a></td>
+<td>2019-05-09</td>
+<td>2019-07-13</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/ayanami/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/vercel/virtual-event-starter-kit" rel="nofollow">virtual-event-starter-kit</a></td>
+<td>2020-12-17</td>
+<td>2020-12-19</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/vercel/virtual-event-starter-kit/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/LeetCode-OpenSource/asuka" rel="nofollow">asuka</a></td>
+<td>2019-04-16</td>
+<td>2019-04-17</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/asuka/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/LeetCode-OpenSource/react-resize-context" rel="nofollow">react-resize-context</a></td>
+<td>2018-07-30</td>
+<td>2018-11-15</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/react-resize-context/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">2</a></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://github.com/LeetCode-OpenSource/rxjs-hooks" rel="nofollow">rxjs-hooks</a></td>
+<td>2019-04-12</td>
+<td>2019-04-12</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/rxjs-hooks/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://github.com/Crossbell-Box/crossbell.js" rel="nofollow">crossbell.js</a></td>
+<td>2022-09-01</td>
+<td>2022-09-01</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/Crossbell-Box/crossbell.js/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://github.com/LeetCode-OpenSource/markdown-it-grouped-code-fence" rel="nofollow">markdown-it-grouped-code-fence</a></td>
+<td>2018-12-16</td>
+<td>2018-12-16</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/markdown-it-grouped-code-fence/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://github.com/ipfs/public-gateway-checker" rel="nofollow">public-gateway-checker</a></td>
+<td>2022-09-01</td>
+<td>2022-09-01</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/ipfs/public-gateway-checker/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://github.com/litten/zing-gallery" rel="nofollow">zing-gallery</a></td>
+<td>2017-12-28</td>
+<td>2017-12-28</td>
+<td>JavaScript</td>
+<td><a href="https://github.com/litten/zing-gallery/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://github.com/LeetCode-OpenSource/hire" rel="nofollow">hire</a></td>
+<td>2020-04-28</td>
+<td>2020-04-28</td>
+<td>JavaScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/hire/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://github.com/logseq/logseq" rel="nofollow">logseq</a></td>
+<td>2020-11-13</td>
+<td>2020-11-13</td>
+<td>Clojure</td>
+<td><a href="https://github.com/logseq/logseq/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://github.com/LeetCode-OpenSource/themes" rel="nofollow">themes</a></td>
+<td>2019-10-30</td>
+<td>2019-10-30</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/LeetCode-OpenSource/themes/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://github.com/airbnb/ts-migrate" rel="nofollow">ts-migrate</a></td>
+<td>2021-02-28</td>
+<td>2021-02-28</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/airbnb/ts-migrate/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://github.com/brijeshb42/monaco-emacs" rel="nofollow">monaco-emacs</a></td>
+<td>2020-03-17</td>
+<td>2020-03-17</td>
+<td>TypeScript</td>
+<td><a href="https://github.com/brijeshb42/monaco-emacs/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://github.com/merico-dev/build" rel="nofollow">build</a></td>
+<td>2021-06-03</td>
+<td>2021-06-03</td>
+<td>md</td>
+<td><a href="https://github.com/merico-dev/build/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://github.com/alinz/react-native-share-extension" rel="nofollow">react-native-share-extension</a></td>
+<td>2018-04-18</td>
+<td>2018-04-18</td>
+<td>Java</td>
+<td><a href="https://github.com/alinz/react-native-share-extension/pulls?q=is%3Apr+author%3Arunjuu" rel="nofollow">1</a></td>
+</tr>
+
+<tr>
+<td>sum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>94</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="the-repos-runjuu-recent-stared-random-10" class="anchor" href="#the-repos-runjuu-recent-stared-random-10" rel="nofollow" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+The repos runjuu recent stared (random 10)</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>REPO</th>
+<th>STAREDDATE</th>
+<th>LAUGUAGE</th>
+<th>LATESTUPDATE</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://github.com/tinify/iMessage-Panda-sticker" rel="nofollow">iMessage-Panda-sticker</a></td>
+<td>2022-09-30</td>
+<td>md</td>
+<td>2023-01-12</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://github.com/marlonrichert/zsh-snap" rel="nofollow">zsh-snap</a></td>
+<td>2022-11-09</td>
+<td>Shell</td>
+<td>2023-01-25</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://github.com/svhawks/SceneKitVideoRecorder" rel="nofollow">SceneKitVideoRecorder</a></td>
+<td>2022-10-04</td>
+<td>Swift</td>
+<td>2023-01-04</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://github.com/vChewing/vChewing-macOS" rel="nofollow">vChewing-macOS</a></td>
+<td>2022-12-11</td>
+<td>Swift</td>
+<td>2023-01-10</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://github.com/megabitsenmzq/ESP32-HomeKit-Remote" rel="nofollow">ESP32-HomeKit-Remote</a></td>
+<td>2022-11-07</td>
+<td>C</td>
+<td>2022-12-17</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://github.com/microsoft/redux-dynamic-modules" rel="nofollow">redux-dynamic-modules</a></td>
+<td>2022-09-10</td>
+<td>TypeScript</td>
+<td>2023-01-15</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://github.com/IdreesInc/Monocraft" rel="nofollow">Monocraft</a></td>
+<td>2022-09-08</td>
+<td>Python</td>
+<td>2023-01-26</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/jjochen/photostickers" rel="nofollow">photostickers</a></td>
+<td>2022-09-30</td>
+<td>Swift</td>
+<td>2022-09-30</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/Songkeys/uni-media" rel="nofollow">uni-media</a></td>
+<td>2022-09-06</td>
+<td>TypeScript</td>
+<td>2022-10-11</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/easychen/rsspush" rel="nofollow">rsspush</a></td>
+<td>2022-09-07</td>
+<td>md</td>
+<td>2023-01-25</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+</body>
+</html>

@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-	"time"
 
 	"github.com/gin-gonic/gin"
 )
@@ -69,9 +68,7 @@ func main() {
 		} else {
 			result := github.GenerateNewFile(userName)
 			// warit for a while to make sure the file is generated
-			time.Sleep(time.Second * 2)
 			userName = strings.ToLower(userName)
-			// c.HTML(http.StatusOK, userName+".html", nil)
 			c.Data(http.StatusOK, "text/html; charset=utf-8", result)
 		}
 	})
