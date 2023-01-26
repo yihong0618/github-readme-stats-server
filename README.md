@@ -4,13 +4,13 @@ Server for [github-readme-stats](https://github.com/yihong0618/github-readme-sta
 
 ---
 
-[Demo Website](https://www.stats.yihong0618.me/) 🚀
+[Demo Website](https://github-readme-stats-d7t3.onrender.com/) 🚀
 
 ## Start locally
 
 - go 1.14 with go mod
 - go run main.go
-
+- with token GITHUB_TOKE=xxxx go run main.go
 
 ### As a container
 
